@@ -1,0 +1,54 @@
+# The files indicated will not be pushed
+#.gitignore
+
+# Temporary files
+/temp
+*~
+'#*#'
+.#*
+
+# Coding-style-checker files
+*.log
+
+# C compiled files or output files and lib
+*.o
+*.a
+a.out
+42sh
+*out*
+.42shrc
+.42sh_history
+
+# Unit_tests files
+*.gcda
+*.gcno
+*.gcov
+unit_tests
+
+# Valgrind files
+vgcore.*
+
+# Software folders
+.vscode
+.idea
+
+# Project informations files
+#*.pdf
+
+# Testing files
+foo.txt
+test.exe
+test_input.txt
+file
+
+# Backup files
+*.old
+
+# Random files
+z
+.lol
+.toto
+caca
+tests/.testlolmdr
+tests/a
+.lstenv

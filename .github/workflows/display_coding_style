@@ -1,0 +1,22 @@
+#!/bin/python3
+
+if __name__ == "__main__":
+    with open("coding-style-reports.log", "r") as f:
+        file_content = f.readlines()
+        find = False
+        if len(file_content) > 0:
+            for line in file_content:
+                content = line.split(":")
+                if len(content[2].split(" ")) > 2:
+                    continue
+                print("::error file=" + content[0] + ",line=" + content[1] +
+                      ",title=" + content[2].split(" ")[1] + " coding style error::" + content[3])
+                find = True
+            if find:
+                exit(1)
+            else:
+                print("::notice title=Coding Style::No errors found")
+                exit(0)
+        else:
+            print("::notice title=Coding Style::No errors found")
+            exit(0)

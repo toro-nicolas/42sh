@@ -1,0 +1,56 @@
+name: 42sh
+
+on: [push, pull_request]
+
+env:
+  EXECUTABLE: 42sh
+
+jobs:
+  check_coding_style:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/epitech/coding-style-checker:latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+      - name: Launch coding style checker
+        run: check.sh $(pwd) $(pwd)
+      - name: Check coding style
+        run:
+          cat coding-style-reports.log;
+          .github/workflows/display_coding_style
+
+  check_program:
+    runs-on: ubuntu-latest
+    container:
+      image: epitechcontent/epitest-docker
+    needs: check_coding_style
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+      - name: Launch "make"
+        run: make
+        timeout-minutes: 2
+      - name: Launch "make clean"
+        run: make clean
+      - name: Check program compilation
+        run: .github/workflows/check_program_compilation ${{ env.EXECUTABLE }}
+      - name: Check banned functions
+        run: |
+          # Disable because all function are authorized 
+          # .github/workflows/check_banned_functions 42sh .github/workflows/authorized_functions.txt
+      - name: Launch "make tests_run"
+        run: make tests_run
+        timeout-minutes: 2
+      - name: Check repository size
+        run: |
+          make fclean
+          size=$(du -sm --exclude='.git' | cut -f1)
+          limit=32
+          if [ "$size" -gt "$limit" ]; then
+            echo "::error title=Repository size::Repository size is too big ($size MB > $limit MB)"
+            exit 1
+          else
+            echo "::notice title=Repository size::Repository size is correct ($size MB <= $limit MB)"
+            exit 0
+          fi
