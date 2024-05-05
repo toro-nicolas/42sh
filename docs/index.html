@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#sh">42sh</a>
+<ul>
+<li><a href="#description">Description</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#tester">Tester</a></li>
+<li><a href="#code-mandatory">Code mandatory</a></li>
+<li><a href="#results">Results</a></li>
+<li><a href="#credits">Credits</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="sh">42sh</h1>
+<h2 id="description">Description</h2>
+<h2 id="documentation">Documentation</h2>
+<h3 id="ouvrir-la-documentation">Ouvrir la documentation</h3>
+<p>Pour ouvrir la documentation, il suffit de lancer la commande suivante :</p>
+<pre class=" language-bash"><code class="prism  language-bash">google-chrome ./documentation/html/index.html  
+</code></pre>
+<p>Je vous conseil d’ajouter à votre .zshrc cet alias :</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">alias</span> open_doc<span class="token operator">=</span><span class="token string">"google-chrome ./documentation/html/index.html"</span>  
+</code></pre>
+<p>Vous aurez juste à éxécuter la commande <code>open_doc</code> pour ouvrir la documentation</p>
+<h3 id="générer-la-documentation">Générer la documentation</h3>
+<p>Vous pouvez générer la documentation en fessant un <code>make doc</code>.<br>
+Bien sur vous aurez besoin de Doxygen. Voici les commandes sur Fedora pour l’installer :</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">sudo</span> dnf <span class="token function">install</span> doxygen doxygen-latex doxygen-doxywizard graphviz  
+</code></pre>
+<p>En cas de problème, vous pouvez me contacter.</p>
+<h2 id="tester">Tester</h2>
+<p>Le tester que j’utilise est différent du testeur fournit par EPITECH.<br>
+Chaque erreur et en rouge et chaque test valide en vert.<br>
+Le chiffre afficher à la fin représenter le nombre de test qui <strong>ne passent pas</strong>.<br>
+Veuillez ne pas augmenter le nombre de tests qui ne passent pas.</p>
+<p>Pour éxécuter le testeur, faite juste <code>./tester.sh</code> ou faite un <code>make tests</code>.<br>
+Vous pouvez voir si vous perdez des tests en comparant votre vos résultats avec ceux du fichier <code>test_reference</code>.</p>
+<h2 id="code-mandatory">Code mandatory</h2>
+<ul>
+<li>Vous devrez créer une branche ou vous pusherez votre code. Une fois vos tâches réalisé sur cette branche, nous verrons à plusieurs pour la merge et vérifier que tout fonctionne</li>
+<li>Chaque fonctions que vous ajouterez devra être coding-style et muni d’une documentation</li>
+<li>Avant de merge vous vérfierez que tout les unit tests passent en fessant <code>make tests run</code></li>
+<li>Vous devrez aussi verifier que les tests du testeur fassent ne dépassent pas les 60 erreurs (votre code aura donc pété quelque chose dans le 42sh)</li>
+<li>Si les github actions ne réussisent pas, alors posez vous des questions</li>
+<li>Chaque commit contiendra <code>[+]</code> ou <code>[-]</code> ou <code>[~]</code> suivi d’un message
+<ul>
+<li><code>[+]</code> : Ajout de fonctionnalité</li>
+<li><code>[-]</code> : Suppression de fonctionnalité</li>
+<li><code>[~]</code> : Modification de fonctionnalité</li>
+</ul>
+</li>
+</ul>
+<p><strong>Bien sur lors de cas execptionnel, nous pourrons déroger à ces règles</strong></p>
+<h2 id="results">Results</h2>
+
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th align="center">Percentage</th>
+<th align="center">Numbers of tests</th>
+<th align="center">Crash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>basic tests</td>
+<td align="center">100%</td>
+<td align="center">4/4</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>path handling</td>
+<td align="center">100%</td>
+<td align="center">5/5</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>setenv and unsetenv</td>
+<td align="center">100%</td>
+<td align="center">2/2</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>builtin cd</td>
+<td align="center">100%</td>
+<td align="center">3/3</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>line formatting (space and tabs)</td>
+<td align="center">100%</td>
+<td align="center">8/8</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>error handling</td>
+<td align="center">100%</td>
+<td align="center">6/6</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>separator</td>
+<td align="center">100%</td>
+<td align="center">1/1</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>simple pipes</td>
+<td align="center">100%</td>
+<td align="center">3/3</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>advanced pipes</td>
+<td align="center">100%</td>
+<td align="center">6/6</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>redirections</td>
+<td align="center">100%</td>
+<td align="center">5/5</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>advanced manipulations</td>
+<td align="center">100%</td>
+<td align="center">3/3</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>&amp;&amp; and || tests</td>
+<td align="center">100%</td>
+<td align="center">3/3</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>globbing</td>
+<td align="center">100%</td>
+<td align="center">1/1</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>var interpreter</td>
+<td align="center">66,7%</td>
+<td align="center">2/3</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>inhibitor</td>
+<td align="center">100%</td>
+<td align="center">2/2</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>magic quotes</td>
+<td align="center">0%</td>
+<td align="center">0/3</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>alias</td>
+<td align="center">100%</td>
+<td align="center">4/4</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>scripting</td>
+<td align="center">0%</td>
+<td align="center">0/1</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>foreach</td>
+<td align="center">0%</td>
+<td align="center">0/1</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>which</td>
+<td align="center">100%</td>
+<td align="center">2/2</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>where</td>
+<td align="center">100%</td>
+<td align="center">2/2</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>if</td>
+<td align="center">0%</td>
+<td align="center">0/2</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>repeat</td>
+<td align="center">100%</td>
+<td align="center">1/1</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>parenthesis</td>
+<td align="center">0%</td>
+<td align="center">0/1</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td><strong>Results</strong></td>
+<td align="center"><strong>87,5%</strong></td>
+<td align="center"><strong>63/72</strong></td>
+<td align="center"><strong>No</strong></td>
+</tr>
+</tbody>
+</table><h2 id="credits">Credits</h2>
+<ul>
+<li>Nicolas TORO</li>
+<li>Gianni TUERO</li>
+<li>Arthur WARIN</li>
+<li>Christophe VANDEVOIR</li>
+<li>Raphael ROSSIGNOL</li>
+</ul>
+
+    </div>
+  </div>
+</body>
+
+</html>
