@@ -130,7 +130,7 @@
     </tr>
     <tr>
       <td>
-        <a href="#l171">separate_parantheses</a>
+        <a href="#l171">separate_parentheses</a>
       </td>
       <td>
         <a href="#l171">171</a>
@@ -334,7 +334,7 @@
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">inhibitor</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">parantheses</span><span class="p">)</span></td>
+      <td class="src "><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">inhibitor</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">parentheses</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l24" href="#l24">24</a></td>
@@ -382,14 +382,14 @@
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">        </span><span class="o">*</span><span class="n">parantheses</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">(</span><span class="n">command</span><span class="p">[</span><span class="n">index</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;(&#39;</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">        </span><span class="o">*</span><span class="n">parentheses</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">(</span><span class="n">command</span><span class="p">[</span><span class="n">index</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;(&#39;</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l28" href="#l28">28</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">        </span><span class="o">*</span><span class="n">inhibitor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">parantheses</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="sc">&#39;(&#39;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
+      <td class="src uncoveredLine"><span class="w">        </span><span class="o">*</span><span class="n">inhibitor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">parentheses</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="sc">&#39;(&#39;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l29" href="#l29">29</a></td>
@@ -624,7 +624,7 @@
       <td class="linebranch">
       </td>
       <td class="linecount coveredLine">844</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">parantheses</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
+      <td class="src coveredLine"><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">parentheses</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l58" href="#l58">58</a></td>
@@ -659,7 +659,7 @@
         </details>
       </td>
       <td class="linecount coveredLine">186401</td>
-      <td class="src coveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">update_inhibitor</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">index</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">inhibitor</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">parantheses</span><span class="p">))</span></td>
+      <td class="src coveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">update_inhibitor</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">index</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">inhibitor</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">parentheses</span><span class="p">))</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l61" href="#l61">61</a></td>
@@ -850,7 +850,7 @@
       <td class="linebranch">
       </td>
       <td class="linecount coveredLine">2211</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">parantheses</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
+      <td class="src coveredLine"><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">parentheses</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l85" href="#l85">85</a></td>
@@ -878,7 +878,7 @@
       <td class="linebranch">
       </td>
       <td class="linecount coveredLine">186388</td>
-      <td class="src coveredLine"><span class="w">        </span><span class="n">update_inhibitor</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">inhibitor</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">parantheses</span><span class="p">);</span></td>
+      <td class="src coveredLine"><span class="w">        </span><span class="n">update_inhibitor</span><span class="p">(</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">inhibitor</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">parentheses</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l88" href="#l88">88</a></td>
@@ -1167,7 +1167,7 @@
       <td class="linebranch">
       </td>
       <td class="linecount coveredLine">2211</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">parantheses</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
+      <td class="src coveredLine"><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">parentheses</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l125" href="#l125">125</a></td>
@@ -1202,7 +1202,7 @@
         </details>
       </td>
       <td class="linecount coveredLine">184197</td>
-      <td class="src coveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">update_inhibitor</span><span class="p">(</span><span class="n">source</span><span class="p">,</span><span class="w"> </span><span class="n">index</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">inhibitor</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">parantheses</span><span class="p">))</span></td>
+      <td class="src coveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">update_inhibitor</span><span class="p">(</span><span class="n">source</span><span class="p">,</span><span class="w"> </span><span class="n">index</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">inhibitor</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">parentheses</span><span class="p">))</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l128" href="#l128">128</a></td>
@@ -1514,7 +1514,7 @@
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="cm"> * @brief Separate the words in the array which are stuck with parantheses</span></td>
+      <td class="src "><span class="cm"> * @brief Separate the words in the array which are stuck with parentheses</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l167" href="#l167">167</a></td>
@@ -1549,7 +1549,7 @@
       <td class="linebranch">
       </td>
       <td class="linecount coveredLine">844</td>
-      <td class="src coveredLine"><span class="k">static</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="nf">separate_parantheses</span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">array</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">nb_words</span><span class="p">)</span></td>
+      <td class="src coveredLine"><span class="k">static</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="nf">separate_parentheses</span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">array</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">nb_words</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l172" href="#l172">172</a></td>
@@ -1912,7 +1912,7 @@
       <td class="linebranch">
       </td>
       <td class="linecount coveredLine">844</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="n">array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">separate_parantheses</span><span class="p">(</span><span class="n">array</span><span class="p">,</span><span class="w"> </span><span class="n">nb_words</span><span class="p">);</span></td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">separate_parentheses</span><span class="p">(</span><span class="n">array</span><span class="p">,</span><span class="w"> </span><span class="n">nb_words</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l217" href="#l217">217</a></td>

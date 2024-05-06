@@ -20,10 +20,11 @@ int show_usage(void)
 {
     my_putstr("USAGE\n");
     my_putstr("    ./42sh\n");
+    my_putstr("    ./42sh [script]\n");
     my_putstr("DESCRIPTION\n");
-    my_putstr("    42sh is a custom shell\n");
+    my_putstr("    A Unix shell based on TCSH.\n");
     my_putstr("    You can execute the help command to see");
-    my_putstr(" the list of available builtins\n");
+    my_putstr(" the list of available builtins.\n");
     return 84;
 }
 

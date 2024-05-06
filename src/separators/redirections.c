@@ -63,5 +63,5 @@ void select_redirections(mysh_t *mysh, input_command_t *input)
         return exec_left_simple_redirection(mysh, input);
     if (input->left_type == 2)
         return exec_left_double_redirection(mysh, input);
-    return analyse_parantheses(mysh, input);
+    return analyse_parentheses(mysh, input);
 }

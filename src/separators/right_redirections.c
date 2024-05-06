@@ -55,7 +55,7 @@ void exec_right_redirection(mysh_t *mysh, input_command_t *input)
     else if (input->left_type == 2)
         exec_left_double_redirection(mysh, input);
     else
-        analyse_parantheses(mysh, input);
+        analyse_parentheses(mysh, input);
     dup2(mysh->saved_stdout, 1);
     close(mysh->saved_stdout);
 }

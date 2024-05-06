@@ -131,19 +131,19 @@ Tests for REDIRECTIONS :
 [1;32mTest 28 [REDIRECTIONS: Missing name for redirect 9] : OK[0m
 [1;31mTest 29 [REDIRECTIONS: Missing name for redirect 10] : KO - Check output in /tmp/test.651421/29/mysh.out /tmp/test.651421/29/tcsh.out[0m
 Error: 4 / 27 | Result: /tmp/test.651421/
-Tests for PARANTHESES :
-[1;32mTest 1 [PARANTHESES: Simple command] : OK[0m
-[1;32mTest 2 [PARANTHESES: Simple command in multiple ()] : OK[0m
-[1;32mTest 3 [PARANTHESES: Redirect operators] : OK[0m
-[1;32mTest 4 [PARANTHESES: Multi commands] : OK[0m
-[1;32mTest 5 [PARANTHESES: Redirect pipes] : OK[0m
-[1;32mTest 6 [PARANTHESES: Hard test] : OK[0m
-[1;32mTest 7 [PARANTHESES: Too many 1] : OK[0m
-[1;32mTest 8 [PARANTHESES: Too many 2] : OK[0m
-[1;32mTest 9 [PARANTHESES: Too many 3] : OK[0m
-[1;32mTest 10 [PARANTHESES: Badly placed 1] : OK[0m
-[1;32mTest 11 [PARANTHESES: Badly placed 2] : OK[0m
-[1;32mTest 12 [PARANTHESES: Invalid null command] : OK[0m
+Tests for parentheses :
+[1;32mTest 1 [parentheses: Simple command] : OK[0m
+[1;32mTest 2 [parentheses: Simple command in multiple ()] : OK[0m
+[1;32mTest 3 [parentheses: Redirect operators] : OK[0m
+[1;32mTest 4 [parentheses: Multi commands] : OK[0m
+[1;32mTest 5 [parentheses: Redirect pipes] : OK[0m
+[1;32mTest 6 [parentheses: Hard test] : OK[0m
+[1;32mTest 7 [parentheses: Too many 1] : OK[0m
+[1;32mTest 8 [parentheses: Too many 2] : OK[0m
+[1;32mTest 9 [parentheses: Too many 3] : OK[0m
+[1;32mTest 10 [parentheses: Badly placed 1] : OK[0m
+[1;32mTest 11 [parentheses: Badly placed 2] : OK[0m
+[1;32mTest 12 [parentheses: Invalid null command] : OK[0m
 No errors found.
 Tests for INHIBITORS :
 [1;32mTest 1 [INHIBITORS: Test 1] : OK[0m

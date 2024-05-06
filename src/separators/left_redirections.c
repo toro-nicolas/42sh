@@ -43,7 +43,7 @@ static void child_process(mysh_t *mysh, input_command_t *input, int fd[2])
 {
     close(fd[1]);
     dup2(fd[0], 0);
-    analyse_parantheses(mysh, input);
+    analyse_parentheses(mysh, input);
     my_exit(mysh, mysh->exit_status, "");
 }
 
@@ -124,7 +124,7 @@ void exec_left_simple_redirection(mysh_t *mysh, input_command_t *input)
     mysh->saved_stdin = dup(0);
     dup2(fd, 0);
     close(fd);
-    analyse_parantheses(mysh, input);
+    analyse_parentheses(mysh, input);
     dup2(mysh->saved_stdin, 0);
     close(mysh->saved_stdin);
 }

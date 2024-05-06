@@ -20,12 +20,12 @@
  * @return <b>void</b>
  */
 static int update_inhibitor(char *command, int index,
-    char *inhibitor, int *parantheses)
+    char *inhibitor, int *parentheses)
 {
     if ((*inhibitor == '(' && command[index] == ')') ||
     ((*inhibitor == 0 || *inhibitor == '(') && command[index] == '(')) {
-        *parantheses += (command[index] == '(') ? 1 : - 1;
-        *inhibitor = (*parantheses) ? '(' : 0;
+        *parentheses += (command[index] == '(') ? 1 : - 1;
+        *inhibitor = (*parentheses) ? '(' : 0;
         return 0;
     }
     if (*inhibitor != 0 && *inhibitor == command[index]
@@ -54,10 +54,10 @@ static int count_words(char *str)
     int n = 0;
     char inhibitor = 0;
     int add_it = 1;
-    int parantheses = 0;
+    int parentheses = 0;
 
     for (int index = 0; str[index] != '\0'; index++) {
-        if (update_inhibitor(str, index, &inhibitor, &parantheses))
+        if (update_inhibitor(str, index, &inhibitor, &parentheses))
             continue;
         if (my_char_is(str[index], " \t\n\"\'\\(") == 0 || inhibitor != 0) {
             n = (add_it) ? n + 1 : n;
@@ -81,10 +81,10 @@ static int count_letters(char *str, int *save)
 {
     int n = 0;
     char inhibitor = 0;
-    int parantheses = 0;
+    int parentheses = 0;
 
     for (int i = *save; str[i] != '\0'; i++) {
-        update_inhibitor(str, i, &inhibitor, &parantheses);
+        update_inhibitor(str, i, &inhibitor, &parentheses);
         if (my_char_is(str[i], " \t\n") && inhibitor == 0)
             return n;
         if (inhibitor == 1)
@@ -121,10 +121,10 @@ static void move_save(int *save, char *str, int index)
 static void fill_str(char *to_fill, int nb_letters, int save, char *source)
 {
     char inhibitor = 0;
-    int parantheses = 0;
+    int parentheses = 0;
 
     for (int index = save - nb_letters; index < save; index++) {
-        if (update_inhibitor(source, index, &inhibitor, &parantheses))
+        if (update_inhibitor(source, index, &inhibitor, &parentheses))
             continue;
         if (my_char_is(source[index], " \t\n") && inhibitor == 0)
             return;
@@ -163,12 +163,12 @@ static void add_element(char **new_array, char **array,
 }
 
 /**
- * @brief Separate the words in the array which are stuck with parantheses
+ * @brief Separate the words in the array which are stuck with parentheses
  * @param array The array
  * @param nb_words The number of words
  * @return <b>char **</b> The new array
  */
-static char **separate_parantheses(char **array, int nb_words)
+static char **separate_parentheses(char **array, int nb_words)
 {
     char **new_array = NULL;
     int array_index = 0;
@@ -213,6 +213,6 @@ char **str_to_array_inhibitors(char *str)
         fill_str(array[index], nb_letters, save, str);
     }
     array[nb_words] = NULL;
-    array = separate_parantheses(array, nb_words);
+    array = separate_parentheses(array, nb_words);
     return array;
 }

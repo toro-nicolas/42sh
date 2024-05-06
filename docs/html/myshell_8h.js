@@ -9,7 +9,7 @@ var myshell_8h =
     [ "analyse_backticks", "myshell_8h.html#aa7e85dc4e8c738600cf18d5522e9488b", null ],
     [ "analyse_multi_commands", "myshell_8h.html#a296598f5f3884d5c5d24132d2fed7fd8", null ],
     [ "analyse_operators", "myshell_8h.html#af6a99cd0283c93dc5b48bfb3bd57a492", null ],
-    [ "analyse_parantheses", "myshell_8h.html#a2739ca45b3f7e5fa62c21a0e875fc819", null ],
+    [ "analyse_parentheses", "myshell_8h.html#a2739ca45b3f7e5fa62c21a0e875fc819", null ],
     [ "analyse_pipes", "myshell_8h.html#a11513c688dbfe9aeed08de42429d47ed", null ],
     [ "array_separators", "myshell_8h.html#a724cd238f4915df7f024d832a1c43782", null ],
     [ "array_string", "myshell_8h.html#a67530938c67bfba483aff8cd69be4d41", null ],

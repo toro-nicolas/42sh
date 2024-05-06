@@ -518,12 +518,12 @@ void exec_left_simple_redirection(mysh_t *mysh, input_command_t *input);
 void select_redirections(mysh_t *mysh, input_command_t *input);
 
 /**
- * @brief Analyse the parantheses
+ * @brief Analyse the parentheses
  * @param mysh The shell structure
  * @param input The input command structure
  * @return <b>void</b>
  */
-void analyse_parantheses(mysh_t *mysh, input_command_t *input);
+void analyse_parentheses(mysh_t *mysh, input_command_t *input);
 
 
 
@@ -575,7 +575,7 @@ int char_is_protected(char *str, int index);
 
 /**
  * @brief Find a valid string in a string
- * depending on inhibitors and parantheses
+ * depending on inhibitors and parentheses
  * @note It's an improved version of my_strstr
  * @param str The string to check
  * @param to_find The string to find

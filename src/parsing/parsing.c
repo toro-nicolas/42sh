@@ -79,7 +79,7 @@ int char_is_protected(char *str, int index)
 
 /**
  * @brief Find a valid string in a string
- * depending on inhibitors and parantheses
+ * depending on inhibitors and parentheses
  * @note It's an improved version of my_strstr
  * @param str The string to check
  * @param to_find The string to find

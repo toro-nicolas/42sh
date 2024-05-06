@@ -2,24 +2,24 @@
 ** EPITECH PROJECT, 2024
 ** 42sh
 ** File description:
-** The parantheses.c
+** The parentheses.c
 */
 /**
- * @file parantheses.c
- * @brief The parantheses.c
+ * @file parentheses.c
+ * @brief The parentheses.c
  * @author Nicolas TORO
  */
 
 #include "../../include/myshell.h"
 
 /**
- * @brief Check if the command contains parantheses
+ * @brief Check if the command contains parentheses
  * @param mysh The shell structure
  * @param input The input command structure
- * @return <b>int</b> <u>0</u> if the command contains parantheses,
+ * @return <b>int</b> <u>0</u> if the command contains parentheses,
  * <u>1</u> otherwise
  */
-static int check_no_parantheses(mysh_t *mysh, input_command_t *input)
+static int check_no_parentheses(mysh_t *mysh, input_command_t *input)
 {
     if (my_str_contains(input->command, "()") == 0) {
         input->args = str_to_array_inhibitors(input->command);
@@ -63,10 +63,10 @@ static int check_if_and_foreach(mysh_t *mysh, input_command_t *input)
 }
 
 /**
- * @brief Check if there are too many parantheses
+ * @brief Check if there are too many parentheses
  * @param mysh The shell structure
  * @param command The command to check
- * @return <b>int</b> <u>1</u> if there are too many parantheses,
+ * @return <b>int</b> <u>1</u> if there are too many parentheses,
  * <u>0</u> otherwise
  */
 static int check_too_many(mysh_t *mysh, char *command)
@@ -93,10 +93,10 @@ static int check_too_many(mysh_t *mysh, char *command)
 }
 
 /**
- * @brief Check if the parantheses are badly placed
+ * @brief Check if the parentheses are badly placed
  * @param mysh The shell structure
  * @param command The command to check
- * @return <b>int</b> <u>1</u> if the parantheses are badly placed,
+ * @return <b>int</b> <u>1</u> if the parentheses are badly placed,
  * <u>0</u> otherwise
  */
 static int check_badly_placed(mysh_t *mysh, char *command)
@@ -140,9 +140,9 @@ static int check_null_command(mysh_t *mysh, char *command)
 }
 
 /**
- * @brief Get the command between the parantheses
+ * @brief Get the command between the parentheses
  * @param command The command to check
- * @return <b>char *</b> The command between the parantheses
+ * @return <b>char *</b> The command between the parentheses
  */
 static char *get_command(char *command)
 {
@@ -165,17 +165,17 @@ static char *get_command(char *command)
 }
 
 /**
- * @brief Analyse the parantheses
+ * @brief Analyse the parentheses
  * @param mysh The shell structure
  * @param input The input command structure
  * @return <b>void</b>
  */
-void analyse_parantheses(mysh_t *mysh, input_command_t *input)
+void analyse_parentheses(mysh_t *mysh, input_command_t *input)
 {
     pid_t pid = 0;
     char *command = NULL;
 
-    if (check_no_parantheses(mysh, input) || check_if_and_foreach(mysh, input)
+    if (check_no_parentheses(mysh, input) || check_if_and_foreach(mysh, input)
     || check_too_many(mysh, input->command) ||
     check_badly_placed(mysh, input->command) ||
     check_null_command(mysh, input->command))
