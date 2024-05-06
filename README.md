@@ -4,10 +4,10 @@
 
 ## Table of contents 📑
 - [Description](https://github.com/toro-nicolas/42sh/blob/main/README.md#description-)
-- [Usage](https://github.com/toro-nicolas/42sh/blob/main/README.md#usage-)
+- [Usage](https://github.com/toro-nicolas/42sh/blob/main/README.md#usage-%EF%B8%8F)
 - [Features list](https://github.com/toro-nicolas/42sh/blob/main/README.md#features-list-)
 - [Result](https://github.com/toro-nicolas/42sh/blob/main/README.md#result-)
-- [Compilation](https://github.com/toro-nicolas/42sh/blob/main/README.md#compilation-)
+- [Compilation](https://github.com/toro-nicolas/42sh/blob/main/README.md#compilation-%EF%B8%8F)
 - [Documentation](https://github.com/toro-nicolas/42sh/blob/main/README.md#documentation-)
 - [Code mandatory](https://github.com/toro-nicolas/42sh/blob/main/README.md#code-mandatory-)
 - [Contributors](https://github.com/toro-nicolas/42sh/blob/main/README.md#contributors-)
