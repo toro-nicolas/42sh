@@ -27,7 +27,7 @@
     </tr>
     <tr>
       <th scope="row">Date:</th>
-      <td>2024-05-06 01:32:46</td>
+      <td>2024-05-06 14:05:54</td>
     </tr>
   </table>
 </div>
@@ -41,15 +41,15 @@
     </tr>
     <tr>
       <th scope="row">Lines:</th>
-      <td>117</td>
+      <td>149</td>
       <td>160</td>
-      <td class="coverage-low">73.1%</td>
+      <td class="coverage-high">93.1%</td>
     </tr>
     <tr>
       <th scope="row">Functions:</th>
-      <td>20</td>
       <td>22</td>
-      <td class="coverage-high">90.9%</td>
+      <td>22</td>
+      <td class="coverage-high">100.0%</td>
     </tr>
     <tr>
       <th scope="row">Branches:</th>
@@ -125,7 +125,7 @@
         <a href="#l12">12</a>
       </td>
       <td>
-        <a href="#l12"> not called</a>
+        <a href="#l12"> called 1 time</a>
       </td>
     </tr>
     <tr>
@@ -136,7 +136,7 @@
         <a href="#l12">12</a>
       </td>
       <td>
-        <a href="#l12"> not called</a>
+        <a href="#l12"> called 1 time</a>
       </td>
     </tr>
     <tr>
@@ -410,8 +410,8 @@
       <td class="lineno"><a id="l12" href="#l12">12</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="n">Test</span><span class="p">(</span><span class="n">environnement1</span><span class="p">,</span><span class="w"> </span><span class="n">full_gcorv</span><span class="p">)</span></td>
+      <td class="linecount coveredLine">4</td>
+      <td class="src coveredLine"><span class="n">Test</span><span class="p">(</span><span class="n">environnement1</span><span class="p">,</span><span class="w"> </span><span class="n">full_gcorv</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l13" href="#l13">13</a></td>
@@ -424,15 +424,15 @@
       <td class="lineno"><a id="l14" href="#l14">14</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">env</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">my_str_to_word_array_select</span><span class="p">(</span><span class="s">&quot;PATH=/bin:/usr/bin ; export _=ls ; export LS_COLORS=RID ; export MYBG=4 ; export LVL=4 ; export NOTE=2&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot; ;&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">env</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">my_str_to_word_array_select</span><span class="p">(</span><span class="s">&quot;PATH=/bin:/usr/bin ; export _=ls ; export LS_COLORS=RID ; export MYBG=4 ; export LVL=4 ; export NOTE=2&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot; ;&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l15" href="#l15">15</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fopen</span><span class="p">(</span><span class="s">&quot;test_input.txt&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;w&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fopen</span><span class="p">(</span><span class="s">&quot;test_input.txt&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;w&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l16" href="#l16">16</a></td>
@@ -445,204 +445,204 @@
       <td class="lineno"><a id="l17" href="#l17">17</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv _</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv _</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l18" href="#l18">18</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv MYSH</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv MYSH</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l19" href="#l19">19</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv HOSTTYPE</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv HOSTTYPE</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l20" href="#l20">20</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv VENDOR</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv VENDOR</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l21" href="#l21">21</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv OSTYPE</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv OSTYPE</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l22" href="#l22">22</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv MACHTYPE</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv MACHTYPE</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l23" href="#l23">23</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv SHLVL</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv SHLVL</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l24" href="#l24">24</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv PWD</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv PWD</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l25" href="#l25">25</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv LOGNAME</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv LOGNAME</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l26" href="#l26">26</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv USER</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv USER</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l27" href="#l27">27</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv GROUP</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv GROUP</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l28" href="#l28">28</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv HOST</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv HOST</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l29" href="#l29">29</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv REMOTEHOST</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv REMOTEHOST</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l30" href="#l30">30</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv LS_COLORS</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv LS_COLORS</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l31" href="#l31">31</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv NOTE</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv NOTE</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l32" href="#l32">32</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;setenv titi</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;setenv titi</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l33" href="#l33">33</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;setenv tata coucou</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;setenv tata coucou</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l34" href="#l34">34</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;env</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;env</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l35" href="#l35">35</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/usr/bin/env</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/usr/bin/env</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l36" href="#l36">36</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv titi</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv titi</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l37" href="#l37">37</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;env</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;env</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l38" href="#l38">38</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/usr/bin/env</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/usr/bin/env</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l39" href="#l39">39</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv tata</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;unsetenv tata</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l40" href="#l40">40</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;env</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;env</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l41" href="#l41">41</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/usr/bin/env</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/usr/bin/env</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l42" href="#l42">42</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;exit</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fprintf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;exit</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l43" href="#l43">43</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">fclose</span><span class="p">(</span><span class="n">file</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fclose</span><span class="p">(</span><span class="n">file</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l44" href="#l44">44</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">freopen</span><span class="p">(</span><span class="s">&quot;test_input.txt&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;r&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">stdin</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">freopen</span><span class="p">(</span><span class="s">&quot;test_input.txt&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;r&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">stdin</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l45" href="#l45">45</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">shell</span><span class="p">(</span><span class="n">env</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">2</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">shell</span><span class="p">(</span><span class="n">env</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l46" href="#l46">46</a></td>

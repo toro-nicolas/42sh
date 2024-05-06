@@ -12,7 +12,8 @@ var searchData=
   ['replace_5fvariable_2ec_9',['replace_variable.c',['../replace__variable_8c.html',1,'']]],
   ['replace_5fvariables_10',['replace_variables',['../myshell_8h.html#a36a2a0c0e44553863713afff2975e26b',1,'replace_variables(mysh_t *mysh):&#160;replace_variable.c'],['../replace__variable_8c.html#a36a2a0c0e44553863713afff2975e26b',1,'replace_variables(mysh_t *mysh):&#160;replace_variable.c']]],
   ['restore_5ftermios_11',['restore_termios',['../myshell_8h.html#ae2fe39da9129e6fdcaa9b76417c4e8a2',1,'restore_termios(struct termios *saved_termios):&#160;termios.c'],['../termios_8c.html#ae2fe39da9129e6fdcaa9b76417c4e8a2',1,'restore_termios(struct termios *saved_termios):&#160;termios.c']]],
-  ['results_12',['Results',['../md_README.html#autotoc_md7',1,'']]],
-  ['right_5fredirections_2ec_13',['right_redirections.c',['../right__redirections_8c.html',1,'']]],
-  ['round_5fflag_5fa_2ec_14',['round_flag_a.c',['../round__flag__a_8c.html',1,'']]]
+  ['result_12',['my.epitech.eu result',['../md_README.html#autotoc_md6',1,'']]],
+  ['result_20🚩_13',['Result 🚩',['../md_README.html#autotoc_md5',1,'']]],
+  ['right_5fredirections_2ec_14',['right_redirections.c',['../right__redirections_8c.html',1,'']]],
+  ['round_5fflag_5fa_2ec_15',['round_flag_a.c',['../round__flag__a_8c.html',1,'']]]
 ];

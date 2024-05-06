@@ -9,11 +9,12 @@ var searchData=
   ['analyse_5fcommand_6',['analyse_command',['../command_8c.html#ad610f2166aaad13ce2fa571ca6a1d1eb',1,'command.c']]],
   ['analyse_5fmulti_5fcommands_7',['analyse_multi_commands',['../myshell_8h.html#a296598f5f3884d5c5d24132d2fed7fd8',1,'analyse_multi_commands(mysh_t *mysh, char *line):&#160;multiple_commands.c'],['../multiple__commands_8c.html#a296598f5f3884d5c5d24132d2fed7fd8',1,'analyse_multi_commands(mysh_t *mysh, char *line):&#160;multiple_commands.c']]],
   ['analyse_5foperators_8',['analyse_operators',['../myshell_8h.html#af6a99cd0283c93dc5b48bfb3bd57a492',1,'analyse_operators(mysh_t *mysh, char *line):&#160;operators.c'],['../operators_8c.html#af6a99cd0283c93dc5b48bfb3bd57a492',1,'analyse_operators(mysh_t *mysh, char *line):&#160;operators.c']]],
-  ['analyse_5fparentheses_9',['analyse_parentheses',['../myshell_8h.html#a2739ca45b3f7e5fa62c21a0e875fc819',1,'analyse_parentheses(mysh_t *mysh, input_command_t *input):&#160;parentheses.c'],['../parentheses_8c.html#a2739ca45b3f7e5fa62c21a0e875fc819',1,'analyse_parentheses(mysh_t *mysh, input_command_t *input):&#160;parentheses.c']]],
+  ['analyse_5fparentheses_9',['analyse_parentheses',['../myshell_8h.html#af004e503e79645136b2fea089261f0c5',1,'analyse_parentheses(mysh_t *mysh, input_command_t *input):&#160;parentheses.c'],['../parentheses_8c.html#af004e503e79645136b2fea089261f0c5',1,'analyse_parentheses(mysh_t *mysh, input_command_t *input):&#160;parentheses.c']]],
   ['analyse_5fpipes_10',['analyse_pipes',['../myshell_8h.html#a11513c688dbfe9aeed08de42429d47ed',1,'analyse_pipes(mysh_t *mysh, char *line):&#160;pipes.c'],['../pipes_8c.html#a11513c688dbfe9aeed08de42429d47ed',1,'analyse_pipes(mysh_t *mysh, char *line):&#160;pipes.c']]],
-  ['ansi_2ec_11',['ansi.c',['../ansi_8c.html',1,'']]],
-  ['array_5fseparators_12',['array_separators',['../myshell_8h.html#a724cd238f4915df7f024d832a1c43782',1,'array_separators(char const *str, char const *separator):&#160;array_separators.c'],['../array__separators_8c.html#a724cd238f4915df7f024d832a1c43782',1,'array_separators(char const *str, char const *separator):&#160;array_separators.c']]],
-  ['array_5fseparators_2ec_13',['array_separators.c',['../array__separators_8c.html',1,'']]],
-  ['array_5fstring_14',['array_string',['../myshell_8h.html#a67530938c67bfba483aff8cd69be4d41',1,'array_string(char const *str, char const *separator):&#160;array_string.c'],['../array__string_8c.html#a67530938c67bfba483aff8cd69be4d41',1,'array_string(char const *str, char const *separator):&#160;array_string.c']]],
-  ['array_5fstring_2ec_15',['array_string.c',['../array__string_8c.html',1,'']]]
+  ['and_20code_20coverage_11',['Tests and code coverage',['../md_README.html#autotoc_md7',1,'']]],
+  ['ansi_2ec_12',['ansi.c',['../ansi_8c.html',1,'']]],
+  ['array_5fseparators_13',['array_separators',['../myshell_8h.html#a724cd238f4915df7f024d832a1c43782',1,'array_separators(char const *str, char const *separator):&#160;array_separators.c'],['../array__separators_8c.html#a724cd238f4915df7f024d832a1c43782',1,'array_separators(char const *str, char const *separator):&#160;array_separators.c']]],
+  ['array_5fseparators_2ec_14',['array_separators.c',['../array__separators_8c.html',1,'']]],
+  ['array_5fstring_15',['array_string',['../myshell_8h.html#a67530938c67bfba483aff8cd69be4d41',1,'array_string(char const *str, char const *separator):&#160;array_string.c'],['../array__string_8c.html#a67530938c67bfba483aff8cd69be4d41',1,'array_string(char const *str, char const *separator):&#160;array_string.c']]],
+  ['array_5fstring_2ec_16',['array_string.c',['../array__string_8c.html',1,'']]]
 ];

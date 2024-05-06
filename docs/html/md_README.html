@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>42sh: 42sh</title>
+<title>42sh: 💻 42sh 🐚</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -97,118 +97,253 @@ $(function(){initNavTree('md_README.html',''); initResizable(true); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">42sh</div></div>
+  <div class="headertitle"><div class="title">💻 42sh 🐚</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a> <img src="https://toro-nicolas.github.io/42sh/preview.png" alt="42sh" class="inline"/></p>
 <h1><a class="anchor" id="autotoc_md1"></a>
-Description</h1>
+Table of contents 📑</h1>
+<ul>
+<li><a href="https://github.com/toro-nicolas/42sh/blob/main/README.md#description-">Description</a></li>
+<li><a href="https://github.com/toro-nicolas/42sh/blob/main/README.md#usage-%EF%B8%8F">Usage</a></li>
+<li><a href="https://github.com/toro-nicolas/42sh/blob/main/README.md#features-list-">Features list</a></li>
+<li><a href="https://github.com/toro-nicolas/42sh/blob/main/README.md#result-">Result</a></li>
+<li><a href="https://github.com/toro-nicolas/42sh/blob/main/README.md#compilation-%EF%B8%8F">Compilation</a></li>
+<li><a href="https://github.com/toro-nicolas/42sh/blob/main/README.md#documentation-">Documentation</a></li>
+<li><a href="https://github.com/toro-nicolas/42sh/blob/main/README.md#code-mandatory-">Code mandatory</a></li>
+<li><a href="https://github.com/toro-nicolas/42sh/blob/main/README.md#contributors-">Contributors</a></li>
+</ul>
 <h1><a class="anchor" id="autotoc_md2"></a>
-Documentation</h1>
-<h2><a class="anchor" id="autotoc_md3"></a>
-Ouvrir la documentation</h2>
-<p>Pour ouvrir la documentation, il suffit de lancer la commande suivante : <br  />
- </p><div class="fragment"><div class="line">google-chrome ./documentation/html/index.html</div>
-</div><!-- fragment --><p> Je vous conseil d'ajouter à votre .zshrc cet alias : <br  />
- </p><div class="fragment"><div class="line">alias open_doc=&quot;google-chrome ./documentation/html/index.html&quot;</div>
-</div><!-- fragment --><p> Vous aurez juste à éxécuter la commande <code>open_doc</code> pour ouvrir la documentation <br  />
+Description 📝</h1>
+<p>The <b>42sh</b> is a project carried out by <b>groups of 5</b> (see <a href="https://github.com/toro-nicolas/42sh/blob/main/README.md#contributors-">Contributors</a>, during our <b>1st year</b> in <a href="https://www.epitech.eu/"><b>EPITECH</b></a> Grand Ecole program. <br  />
+ Its purpose is to recreate in <a href="https://en.wikipedia.org/wiki/C_(programming_language)"><b>C</b></a> a <a href="https://en.wikipedia.org/wiki/Unix_shell"><b>Unix shell</b></a> based on <a href="https://en.wikipedia.org/wiki/Tcsh"><b>TCSH</b></a>. <br  />
+ In addition, we've taken inspiration from <a href="https://github.com/romkatv/powerlevel10k">Powerlevel10k</a> for our <b>shell prompt</b>. <br  />
 </p>
-<h2><a class="anchor" id="autotoc_md4"></a>
-Générer la documentation</h2>
-<p>Vous pouvez générer la documentation en fessant un <code>make doc</code>. <br  />
- Bien sur vous aurez besoin de Doxygen. Voici les commandes sur Fedora pour l'installer : <br  />
- </p><div class="fragment"><div class="line">sudo dnf install doxygen doxygen-latex doxygen-doxywizard graphviz</div>
-</div><!-- fragment --><p> En cas de problème, vous pouvez me contacter. <br  />
+<h1><a class="anchor" id="autotoc_md3"></a>
+Usage ⚔️</h1>
+<p>You can run 42sh like this : </p><div class="fragment"><div class="line">./42sh</div>
+</div><!-- fragment --><p>You can execute script with 42sh like this : </p><div class="fragment"><div class="line">./42sh [script]</div>
+</div><!-- fragment --><p>You can also add the <b>42sh</b> to the <b>shebang of a script</b>, and when you run the script it will use the 42sh. <br  />
 </p>
-<h1><a class="anchor" id="autotoc_md5"></a>
-Tester</h1>
-<p>Le tester que j'utilise est différent du testeur fournit par EPITECH. <br  />
- Chaque erreur et en rouge et chaque test valide en vert. <br  />
- Le chiffre afficher à la fin représenter le nombre de test qui <b>ne passent pas</b>. <br  />
- Veuillez ne pas augmenter le nombre de tests qui ne passent pas. <br  />
-</p>
-<p>Pour éxécuter le testeur, faite juste <code>./tester.sh</code> ou faite un <code>make tests</code>. Vous pouvez voir si vous perdez des tests en comparant votre vos résultats avec ceux du fichier <code>test_reference</code>.</p>
-<h1><a class="anchor" id="autotoc_md6"></a>
-Code mandatory</h1>
+<p>For more information, please see the help section. </p><div class="fragment"><div class="line">&gt; ./42sh --help</div>
+<div class="line">USAGE</div>
+<div class="line">    ./42sh</div>
+<div class="line">    ./42sh [script]</div>
+<div class="line">DESCRIPTION</div>
+<div class="line">    A Unix shell based on TCSH.</div>
+<div class="line">    You can execute the help command to see the list of available builtins.</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
+Features list 📋</h1>
+<p>Our <b>42sh</b> includes many of the <b>features found</b> in <b>TCSH</b> :</p><ul>
+<li>Executing a simple command</li>
+<li>Executing recreated builtins :<ul>
+<li>about</li>
+<li>alias</li>
+<li>cd</li>
+<li>echo</li>
+<li>else</li>
+<li>endif</li>
+<li>env</li>
+<li>exit</li>
+<li>foreach</li>
+<li>help</li>
+<li>history</li>
+<li>if</li>
+<li>repeat</li>
+<li>set</li>
+<li>setenv</li>
+<li>source</li>
+<li>unalias</li>
+<li>unset</li>
+<li>unsetenv</li>
+<li>where</li>
+<li>which</li>
+</ul>
+</li>
+<li>Dynamic prompt</li>
+<li>Dynamic line edition (use arrow and ctrl command)</li>
+<li>Use of history and event (all commands are stock in the .42sh_history)</li>
+<li>Use of variable (local and environmental)</li>
+<li>Handle of specials variabes (~, ? and some other variables)</li>
+<li>Handle backticks ("`")</li>
+<li>Handle semi-colons (";")</li>
+<li>Handle operators ("&amp;&amp;" and "||")</li>
+<li>Handle pipes ("|")</li>
+<li>Handle redirection ("&lt;", "&lt;&lt;", "&gt;" and "&gt;&gt;")</li>
+<li>Handle inhibitors ('"', "'" and "\\")
+- Handle parentheses ("()")
+- Handle globbing ("*", "?", "[" and "]")
+- Handle alias
+- Handle scripting and scripting commands (if, else, endif and foreach)
+
+
+@section autotoc_md5 Result 🚩
+The result of this project is a &lt;strong&gt;almost perfect shell&lt;/strong&gt;, &lt;strong&gt;very similar to TCSH&lt;/strong&gt;.  &lt;br&gt;
+If you discover a &lt;strong&gt;problem&lt;/strong&gt; or an &lt;strong&gt;error&lt;/strong&gt;, don't hesitate to &lt;strong&gt;create an issue&lt;/strong&gt; and &lt;strong&gt;report it&lt;/strong&gt; to us as soon as possible.
+
+@subsection autotoc_md6 my.epitech.eu result
+
+&lt;table class="markdownTable"&gt;
+  &lt;tr class="markdownTableHead"&gt;    &lt;th class="markdownTableHeadNone"&gt; Category  </li>
+</ul>
+<p>Percentage   </p>
+<p>Numbers of tests   </p>
+<p>Crash    </p>
+<p>basic tests   </p>
+<p>100%   </p>
+<p>4/4   </p>
+<p>No    </p>
+<p>path handling   </p>
+<p>100%   </p>
+<p>5/5   </p>
+<p>No    </p>
+<p>setenv and unsetenv   </p>
+<p>100%   </p>
+<p>2/2   </p>
+<p>No    </p>
+<p>builtin cd   </p>
+<p>100%   </p>
+<p>3/3   </p>
+<p>No    </p>
+<p>line formatting (space and tabs)   </p>
+<p>100%   </p>
+<p>8/8   </p>
+<p>No    </p>
+<p>error handling   </p>
+<p>100%   </p>
+<p>6/6   </p>
+<p>No    </p>
+<p>separator   </p>
+<p>100%   </p>
+<p>1/1   </p>
+<p>No    </p>
+<p>simple pipes   </p>
+<p>100%   </p>
+<p>3/3   </p>
+<p>No    </p>
+<p>advanced pipes   </p>
+<p>100%   </p>
+<p>6/6   </p>
+<p>No    </p>
+<p>redirections   </p>
+<p>100%   </p>
+<p>5/5   </p>
+<p>No    </p>
+<p>advanced manipulations   </p>
+<p>100%   </p>
+<p>3/3   </p>
+<p>No    </p>
+<p>&amp;&amp; and || tests   </p>
+<p>100%   </p>
+<p>3/3   </p>
+<p>No    </p>
+<p>globbing   </p>
+<p>100%   </p>
+<p>1/1   </p>
+<p>No    </p>
+<p>var interpreter   </p>
+<p>66,7%   </p>
+<p>2/3   </p>
+<p>No    </p>
+<p>inhibitor   </p>
+<p>100%   </p>
+<p>2/2   </p>
+<p>No    </p>
+<p>magic quotes   </p>
+<p>0%   </p>
+<p>0/3   </p>
+<p>No    </p>
+<p>alias   </p>
+<p>100%   </p>
+<p>4/4   </p>
+<p>No    </p>
+<p>scripting   </p>
+<p>0%   </p>
+<p>0/1   </p>
+<p>No    </p>
+<p>foreach   </p>
+<p>0%   </p>
+<p>0/1   </p>
+<p>No    </p>
+<p>which   </p>
+<p>100%   </p>
+<p>2/2   </p>
+<p>No    </p>
+<p>where   </p>
+<p>100%   </p>
+<p>2/2   </p>
+<p>No    </p>
+<p>if   </p>
+<p>0%   </p>
+<p>0/2   </p>
+<p>No    </p>
+<p>repeat   </p>
+<p>100%   </p>
+<p>1/1   </p>
+<p>No    </p>
+<p>parenthesis   </p>
+<p>0%   </p>
+<p>0/1   </p>
+<p>No    </p>
+<p><b>Results</b>   </p>
+<p><b>87,5%</b>   </p>
+<p><b>63/72</b>   </p>
+<p><b>No</b>   </p>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Tests and code coverage</h2>
+<p>Functional tests were carried out with a <b>bash tester</b> and <b>unit tests</b> using <a href="https://criterion.readthedocs.io/en/master/intro.html">criterion</a>. <br  />
+ Unit tests are still to be performed, but a large part of the code is already covered: <br  />
+</p><ul>
+<li>Lines: 84.8%</li>
+<li>Functions: 94.7%</li>
+<li>Branches: 45.4%</li>
+</ul>
+<p>You can run the tester with this command : </p><div class="fragment"><div class="line">./tester.sh</div>
+</div><!-- fragment --><p> You can compile the project and run the tester with this command : </p><div class="fragment"><div class="line">make tests</div>
+</div><!-- fragment --><p> You can compile the project and run the unit tests with this command : </p><div class="fragment"><div class="line">make tests_run</div>
+</div><!-- fragment --><p>For more details, please click <a href="https://toro-nicolas.github.io/42sh/tests/test.html">here</a>.</p>
+<h1><a class="anchor" id="autotoc_md8"></a>
+Compilation 🛠️</h1>
+<p>You can compile the project with this command : </p><div class="fragment"><div class="line">make</div>
+</div><!-- fragment --><p>If you want to debug the program, you can compile the project with this : </p><div class="fragment"><div class="line">make debug </div>
+</div><!-- fragment --><p>If you want clean the project, you can run this command : </p><div class="fragment"><div class="line">make fclean</div>
+</div><!-- fragment --><p>You can clean and compile the project with <code>make re</code> and for debugging <code>make re_debug</code></p>
+<p>You can compile the unit tests with this command : </p><div class="fragment"><div class="line">make unit_tests</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md9"></a>
+Documentation 📚</h1>
+<p>The documentation is accessible <a href="https://toro-nicolas.github.io/42sh/html/">here</a>.</p>
+<p>You can generate the documentation with this command : </p><div class="fragment"><div class="line">make doc</div>
+</div><!-- fragment --><p> You need multiple package for generate them :</p><ul>
+<li>doxygen</li>
+<li>doxygen-latex</li>
+<li>doxygen-doxywizard</li>
+<li>graphviz</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md10"></a>
+Code mandatory 📦</h1>
 <ul>
-<li>Vous devrez créer une branche ou vous pusherez votre code. Une fois vos tâches réalisé sur cette branche, nous verrons à plusieurs pour la merge et vérifier que tout fonctionne</li>
-<li>Chaque fonctions que vous ajouterez devra être coding-style et muni d'une documentation</li>
-<li>Avant de merge vous vérfierez que tout les unit tests passent en fessant <code>make tests run</code></li>
-<li>Vous devrez aussi verifier que les tests du testeur fassent ne dépassent pas les 60 erreurs (votre code aura donc pété quelque chose dans le 42sh)</li>
-<li>Si les github actions ne réussisent pas, alors posez vous des questions</li>
-<li>Chaque commit contiendra <code>[+]</code> ou <code>[-]</code> ou <code>[~]</code> suivi d'un message <br  />
-<ul>
-<li><code>[+]</code> : Ajout de fonctionnalité</li>
-<li><code>[-]</code> : Suppression de fonctionnalité</li>
-<li><code>[~]</code> : Modification de fonctionnalité</li>
+<li>You'll need to create a branch where you'll push your code. Once you've completed your tasks on this branch, we'll work together to merge it and check that everything works.</li>
+<li>Every function you add must be code-style and documented.</li>
+<li>Before merging, you'll need to check that all unit tests pass by running <code>make tests_run</code>.</li>
+<li>If the github actions don't succeed, then ask yourself some questions</li>
+<li>Each commit will contain <code>[+]</code> or <code>[-]</code> or <code>[~]</code> followed by a message<ul>
+<li><code>[+]</code> : Added functionality</li>
+<li><code>[-]</code> : Delete feature</li>
+<li><code>[~]</code> : Feature modification</li>
 </ul>
 </li>
 </ul>
-<p><b>Bien sur lors de cas execptionnel, nous pourrons déroger à ces règles</b></p>
-<h1><a class="anchor" id="autotoc_md7"></a>
-Results</h1>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Category   </th><th class="markdownTableHeadCenter">Percentage   </th><th class="markdownTableHeadCenter">Numbers of tests   </th><th class="markdownTableHeadCenter">Crash    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">basic tests   </td><td class="markdownTableBodyCenter">100%   </td><td class="markdownTableBodyCenter">4/4   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">path handling   </td><td class="markdownTableBodyCenter">100%   </td><td class="markdownTableBodyCenter">5/5   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">setenv and unsetenv   </td><td class="markdownTableBodyCenter">100%   </td><td class="markdownTableBodyCenter">2/2   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">builtin cd   </td><td class="markdownTableBodyCenter">100%   </td><td class="markdownTableBodyCenter">3/3   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">line formatting (space and tabs)   </td><td class="markdownTableBodyCenter">100%   </td><td class="markdownTableBodyCenter">8/8   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">error handling   </td><td class="markdownTableBodyCenter">100%   </td><td class="markdownTableBodyCenter">6/6   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">separator   </td><td class="markdownTableBodyCenter">100%   </td><td class="markdownTableBodyCenter">1/1   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">simple pipes   </td><td class="markdownTableBodyCenter">100%   </td><td class="markdownTableBodyCenter">3/3   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">advanced pipes   </td><td class="markdownTableBodyCenter">100%   </td><td class="markdownTableBodyCenter">6/6   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">redirections   </td><td class="markdownTableBodyCenter">100%   </td><td class="markdownTableBodyCenter">5/5   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">advanced manipulations   </td><td class="markdownTableBodyCenter">100%   </td><td class="markdownTableBodyCenter">3/3   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">&amp;&amp; and || tests   </td><td class="markdownTableBodyCenter">100%   </td><td class="markdownTableBodyCenter">3/3   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">globbing   </td><td class="markdownTableBodyCenter">100%   </td><td class="markdownTableBodyCenter">1/1   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">var interpreter   </td><td class="markdownTableBodyCenter">66,7%   </td><td class="markdownTableBodyCenter">2/3   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">inhibitor   </td><td class="markdownTableBodyCenter">100%   </td><td class="markdownTableBodyCenter">2/2   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">magic quotes   </td><td class="markdownTableBodyCenter">0%   </td><td class="markdownTableBodyCenter">0/3   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">alias   </td><td class="markdownTableBodyCenter">100%   </td><td class="markdownTableBodyCenter">4/4   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">scripting   </td><td class="markdownTableBodyCenter">0%   </td><td class="markdownTableBodyCenter">0/1   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">foreach   </td><td class="markdownTableBodyCenter">0%   </td><td class="markdownTableBodyCenter">0/1   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">which   </td><td class="markdownTableBodyCenter">100%   </td><td class="markdownTableBodyCenter">2/2   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">where   </td><td class="markdownTableBodyCenter">100%   </td><td class="markdownTableBodyCenter">2/2   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">if   </td><td class="markdownTableBodyCenter">0%   </td><td class="markdownTableBodyCenter">0/2   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">repeat   </td><td class="markdownTableBodyCenter">100%   </td><td class="markdownTableBodyCenter">1/1   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">parenthesis   </td><td class="markdownTableBodyCenter">0%   </td><td class="markdownTableBodyCenter">0/1   </td><td class="markdownTableBodyCenter">No    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><b>Results</b>   </td><td class="markdownTableBodyCenter"><b>87,5%</b>   </td><td class="markdownTableBodyCenter"><b>63/72</b>   </td><td class="markdownTableBodyCenter"><b>No</b>   </td></tr>
-</table>
-<h1><a class="anchor" id="autotoc_md8"></a>
-Credits</h1>
-<ul>
-<li>Nicolas TORO</li>
-<li>Gianni TUERO</li>
-<li>Arthur WARIN</li>
-<li>Christophe VANDEVOIR</li>
-<li>Raphael ROSSIGNOL </li>
+<p><b>Of course, in exceptional cases, we may depart from these rules.</b> <br  />
+</p>
+<h1><a class="anchor" id="autotoc_md11"></a>
+Contributors 👥</h1>
+<p>For this project, we were a group of <b>5 people</b>. Here are the people in the group: <br  />
+</p><ul>
+<li><a href="https://github.com/arthurwarin">Arthur WARIN</a></li>
+<li><a href="https://github.com/ItsKarmaOff">Christophe VANDEVOIR</a> : also published the <a href="https://github.com/ItsKarmaOff/42sh">42sh</a></li>
+<li><a href="https://github.com/xJundo">Gianni TUERO</a></li>
+<li><a href="https://github.com/toro-nicolas">Nicolas TORO</a> : also published the <a href="https://github.com/toro-nicolas/42sh">42sh</a></li>
+<li><a href="https://github.com/RaphRoss">Raphael ROSSIGNOL</a> </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

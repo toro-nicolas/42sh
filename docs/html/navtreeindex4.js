@@ -1,10 +1,13 @@
 var NAVTREEINDEX4 =
 {
+"myshell_8h.html#afef2a05b26e32f82eaf1bd4a54debc6a":[2,0,0,3,31],
+"myshell_8h.html#affcace8e6ac735e302b4d9db6b992d4c":[2,0,0,3,90],
+"myshell_8h_source.html":[2,0,0,3],
 "operators_8c.html":[2,0,2,7,3],
 "operators_8c.html#af6a99cd0283c93dc5b48bfb3bd57a492":[2,0,2,7,3,0],
 "pages.html":[],
 "parentheses_8c.html":[2,0,2,7,4],
-"parentheses_8c.html#a2739ca45b3f7e5fa62c21a0e875fc819":[2,0,2,7,4,0],
+"parentheses_8c.html#af004e503e79645136b2fea089261f0c5":[2,0,2,7,4,0],
 "parsing_8c.html":[2,0,2,5,2],
 "parsing_8c.html#a7245c66649e62b1d42afcb9829aa5d1c":[2,0,2,5,2,1],
 "parsing_8c.html#aace2bde00786eeab38c2f321c78a5bc8":[2,0,2,5,2,4],

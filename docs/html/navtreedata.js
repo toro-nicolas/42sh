@@ -25,16 +25,19 @@
 var NAVTREE =
 [
   [ "42sh", "index.html", [
-    [ "42sh", "md_README.html", [
-      [ "Description", "md_README.html#autotoc_md1", null ],
-      [ "Documentation", "md_README.html#autotoc_md2", [
-        [ "Ouvrir la documentation", "md_README.html#autotoc_md3", null ],
-        [ "Générer la documentation", "md_README.html#autotoc_md4", null ]
+    [ "💻 42sh 🐚", "md_README.html", [
+      [ "Table of contents 📑", "md_README.html#autotoc_md1", null ],
+      [ "Description 📝", "md_README.html#autotoc_md2", null ],
+      [ "Usage ⚔️", "md_README.html#autotoc_md3", null ],
+      [ "Features list 📋", "md_README.html#autotoc_md4", null ],
+      [ "Result 🚩", "md_README.html#autotoc_md5", [
+        [ "my.epitech.eu result", "md_README.html#autotoc_md6", null ],
+        [ "Tests and code coverage", "md_README.html#autotoc_md7", null ]
       ] ],
-      [ "Tester", "md_README.html#autotoc_md5", null ],
-      [ "Code mandatory", "md_README.html#autotoc_md6", null ],
-      [ "Results", "md_README.html#autotoc_md7", null ],
-      [ "Credits", "md_README.html#autotoc_md8", null ]
+      [ "Compilation 🛠️", "md_README.html#autotoc_md8", null ],
+      [ "Documentation 📚", "md_README.html#autotoc_md9", null ],
+      [ "Code mandatory 📦", "md_README.html#autotoc_md10", null ],
+      [ "Contributors 👥", "md_README.html#autotoc_md11", null ]
     ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -55,8 +58,8 @@ var NAVTREEINDEX =
 "about_8c.html",
 "include_2mylist_8h.html#a5edf6b23c31d584d1c5cdd6d1fa8c8ad",
 "lib_2mylist_2mylist_8h.html#ac07c223309cae8da70382da20755856a",
-"my__merge__list_8c.html",
-"operators_8c.html"
+"my__memmove_8c.html#a3f1ac634e231e3022769f2ab239a1ebd",
+"myshell_8h.html#afef2a05b26e32f82eaf1bd4a54debc6a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
