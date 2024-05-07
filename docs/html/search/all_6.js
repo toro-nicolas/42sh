@@ -34,5 +34,6 @@ var searchData=
   ['format_5fit_5fint_2ec_31',['format_it_int.c',['../format__it__int_8c.html',1,'']]],
   ['format_5fit_5fstr_2ec_32',['format_it_str.c',['../format__it__str_8c.html',1,'']]],
   ['formating_5fs_33',['formating_s',['../structformating__s.html',1,'']]],
-  ['free_5finput_5flist_34',['free_input_list',['../myshell_8h.html#adbf8844693b9a7029c360b0e6155ff3d',1,'free_input_list(mysh_t *mysh):&#160;exit.c'],['../exit_8c.html#adbf8844693b9a7029c360b0e6155ff3d',1,'free_input_list(mysh_t *mysh):&#160;exit.c']]]
+  ['free_5finput_5flist_34',['free_input_list',['../myshell_8h.html#adbf8844693b9a7029c360b0e6155ff3d',1,'free_input_list(mysh_t *mysh):&#160;exit.c'],['../exit_8c.html#adbf8844693b9a7029c360b0e6155ff3d',1,'free_input_list(mysh_t *mysh):&#160;exit.c']]],
+  ['free_5fstr_5fand_5ftab_35',['free_str_and_tab',['../myshell_8h.html#a0af467f1a8a33e4e7914c10fbba2ed65',1,'free_str_and_tab(char *str, char **tab):&#160;exit.c'],['../exit_8c.html#a0af467f1a8a33e4e7914c10fbba2ed65',1,'free_str_and_tab(char *str, char **tab):&#160;exit.c']]]
 ];

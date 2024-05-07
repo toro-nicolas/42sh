@@ -8,8 +8,9 @@ var searchData=
   ['get_5finput_5fcommand_5',['get_input_command',['../myshell_8h.html#a787ffd041df086b59b01e528f89377d0',1,'get_input_command(char *command):&#160;input_command.c'],['../input__command_8c.html#a787ffd041df086b59b01e528f89377d0',1,'get_input_command(char *command):&#160;input_command.c']]],
   ['get_5fmysh_6',['get_mysh',['../myshell_8h.html#aafd79bb186ff044cd245e285e91136d2',1,'get_mysh(void):&#160;shell.c'],['../shell_8c.html#aafd79bb186ff044cd245e285e91136d2',1,'get_mysh(void):&#160;shell.c']]],
   ['get_5fredirection_5fpath_7',['get_redirection_path',['../myshell_8h.html#a976cad15a71f759c5f970e5bbebb157a',1,'get_redirection_path(char *line):&#160;redirections.c'],['../redirections_8c.html#a976cad15a71f759c5f970e5bbebb157a',1,'get_redirection_path(char *line):&#160;redirections.c']]],
-  ['get_5fvariable_5fvalue_8',['get_variable_value',['../myshell_8h.html#a8ef053d144c08ad52bb70a327f592e68',1,'get_variable_value(mysh_t *mysh, char *name):&#160;set.c'],['../set_8c.html#a8ef053d144c08ad52bb70a327f592e68',1,'get_variable_value(mysh_t *mysh, char *name):&#160;set.c']]],
-  ['git_5frepository_2ec_9',['git_repository.c',['../git__repository_8c.html',1,'']]],
-  ['globbing_10',['globbing',['../myshell_8h.html#afe6b43da3ee04eae3e97b2eadb581ed7',1,'globbing(char **args):&#160;globbing.c'],['../globbing_8c.html#afe6b43da3ee04eae3e97b2eadb581ed7',1,'globbing(char **args):&#160;globbing.c']]],
-  ['globbing_2ec_11',['globbing.c',['../globbing_8c.html',1,'']]]
+  ['get_5fvariable_5fcontent_8',['get_variable_content',['../foreach_8c.html#a03037ad01eb12009b4a02a39e05acf66',1,'foreach.c']]],
+  ['get_5fvariable_5fvalue_9',['get_variable_value',['../myshell_8h.html#a8ef053d144c08ad52bb70a327f592e68',1,'get_variable_value(mysh_t *mysh, char *name):&#160;set.c'],['../set_8c.html#a8ef053d144c08ad52bb70a327f592e68',1,'get_variable_value(mysh_t *mysh, char *name):&#160;set.c']]],
+  ['git_5frepository_2ec_10',['git_repository.c',['../git__repository_8c.html',1,'']]],
+  ['globbing_11',['globbing',['../myshell_8h.html#afe6b43da3ee04eae3e97b2eadb581ed7',1,'globbing(char **args):&#160;globbing.c'],['../globbing_8c.html#afe6b43da3ee04eae3e97b2eadb581ed7',1,'globbing(char **args):&#160;globbing.c']]],
+  ['globbing_2ec_12',['globbing.c',['../globbing_8c.html',1,'']]]
 ];

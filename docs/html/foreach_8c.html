@@ -109,11 +109,11 @@ $(function(){initNavTree('foreach_8c.html',''); initResizable(true); });
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a03037ad01eb12009b4a02a39e05acf66" id="r_a03037ad01eb12009b4a02a39e05acf66"><td class="memItemLeft" align="right" valign="top"><a id="a03037ad01eb12009b4a02a39e05acf66" name="a03037ad01eb12009b4a02a39e05acf66"></a>
-char **&#160;</td><td class="memItemRight" valign="bottom"><b>get_variable_content</b> (<a class="el" href="structmysh__s.html">mysh_t</a> *mysh)</td></tr>
+<tr class="memitem:a03037ad01eb12009b4a02a39e05acf66" id="r_a03037ad01eb12009b4a02a39e05acf66"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03037ad01eb12009b4a02a39e05acf66">get_variable_content</a> (<a class="el" href="structmysh__s.html">mysh_t</a> *mysh)</td></tr>
+<tr class="memdesc:a03037ad01eb12009b4a02a39e05acf66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the content of the variable.  <br /></td></tr>
 <tr class="separator:a03037ad01eb12009b4a02a39e05acf66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d65abae38242479bbaca2f6f9f5520d" id="r_a5d65abae38242479bbaca2f6f9f5520d"><td class="memItemLeft" align="right" valign="top"><a id="a5d65abae38242479bbaca2f6f9f5520d" name="a5d65abae38242479bbaca2f6f9f5520d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>execute_command</b> (<a class="el" href="structmysh__s.html">mysh_t</a> *mysh, char *<a class="el" href="myshell_8h.html#acaabf3cf805e64bfb1b37f5b004824b5">command</a>)</td></tr>
+<tr class="memitem:a5d65abae38242479bbaca2f6f9f5520d" id="r_a5d65abae38242479bbaca2f6f9f5520d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d65abae38242479bbaca2f6f9f5520d">execute_command</a> (<a class="el" href="structmysh__s.html">mysh_t</a> *mysh, char *<a class="el" href="myshell_8h.html#acaabf3cf805e64bfb1b37f5b004824b5">command</a>)</td></tr>
+<tr class="memdesc:a5d65abae38242479bbaca2f6f9f5520d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the command.  <br /></td></tr>
 <tr class="separator:a5d65abae38242479bbaca2f6f9f5520d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31830b9b56df5bc5b2e8c50a42e9d981" id="r_a31830b9b56df5bc5b2e8c50a42e9d981"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31830b9b56df5bc5b2e8c50a42e9d981">exec_foreach</a> (<a class="el" href="structmysh__s.html">mysh_t</a> *mysh)</td></tr>
 <tr class="memdesc:a31830b9b56df5bc5b2e8c50a42e9d981"><td class="mdescLeft">&#160;</td><td class="mdescRight">The foreach builtin.  <br /></td></tr>
@@ -145,6 +145,63 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>execute_command</b> (
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><b>int</b> <u>0</u> if the command succeed, <u>1</u> otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a5d65abae38242479bbaca2f6f9f5520d" name="a5d65abae38242479bbaca2f6f9f5520d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d65abae38242479bbaca2f6f9f5520d">&#9670;&#160;</a></span>execute_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void execute_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmysh__s.html">mysh_t</a> *</td>          <td class="paramname"><span class="paramname"><em>mysh</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>command</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Execute the command. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mysh</td><td>The shell structure </td></tr>
+    <tr><td class="paramname">command</td><td>The command to execute </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><b>void</b> </dd></dl>
+
+</div>
+</div>
+<a id="a03037ad01eb12009b4a02a39e05acf66" name="a03037ad01eb12009b4a02a39e05acf66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03037ad01eb12009b4a02a39e05acf66">&#9670;&#160;</a></span>get_variable_content()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char ** get_variable_content </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmysh__s.html">mysh_t</a> *</td>          <td class="paramname"><span class="paramname"><em>mysh</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the content of the variable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mysh</td><td>The shell structure </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><b>char **</b> The content of the variable </dd></dl>
 
 </div>
 </div>

@@ -56,10 +56,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "about_8c.html",
-"include_2mylist_8h.html#a5edf6b23c31d584d1c5cdd6d1fa8c8ad",
-"lib_2mylist_2mylist_8h.html#ac07c223309cae8da70382da20755856a",
-"my__memmove_8c.html#a3f1ac634e231e3022769f2ab239a1ebd",
-"myshell_8h.html#afef2a05b26e32f82eaf1bd4a54debc6a"
+"include_2mylist_8h.html",
+"lib_2mylist_2mylist_8h.html#a88b24da53140700204a527f910385029",
+"my__malloc__strndup_8c.html#a161966d6de4894bec46cb88ca40f535b",
+"myshell_8h.html#af15ac46a1fb124824fea079eb4e96bfa"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

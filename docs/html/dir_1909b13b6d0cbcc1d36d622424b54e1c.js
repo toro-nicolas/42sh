@@ -5,6 +5,7 @@ var dir_1909b13b6d0cbcc1d36d622424b54e1c =
     [ "cd.c", "cd_8c.html", "cd_8c" ],
     [ "echo.c", "echo_8c.html", "echo_8c" ],
     [ "else.c", "else_8c.html", "else_8c" ],
+    [ "end.c", "end_8c.html", "end_8c" ],
     [ "endif.c", "endif_8c.html", "endif_8c" ],
     [ "env.c", "env_8c.html", "env_8c" ],
     [ "exec.c", "exec_8c.html", "exec_8c" ],
@@ -17,6 +18,7 @@ var dir_1909b13b6d0cbcc1d36d622424b54e1c =
     [ "setenv.c", "setenv_8c.html", "setenv_8c" ],
     [ "source.c", "source_8c.html", "source_8c" ],
     [ "unalias.c", "unalias_8c.html", "unalias_8c" ],
+    [ "unset.c", "unset_8c.html", "unset_8c" ],
     [ "unsetenv.c", "unsetenv_8c.html", "unsetenv_8c" ],
     [ "where.c", "where_8c.html", "where_8c" ],
     [ "which.c", "which_8c.html", "which_8c" ]

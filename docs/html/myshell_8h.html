@@ -134,6 +134,15 @@ Macros</h2></td></tr>
 <tr class="memitem:addbc80494b33b305de6007f3258cec44" id="r_addbc80494b33b305de6007f3258cec44"><td class="memItemLeft" align="right" valign="top"><a id="addbc80494b33b305de6007f3258cec44" name="addbc80494b33b305de6007f3258cec44"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>CTRL_KEYPRESS</b>(k)&#160;&#160;&#160;((k)  &amp; 0x1f)</td></tr>
 <tr class="separator:addbc80494b33b305de6007f3258cec44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e560b5a271c962b5e2d5bd726582b0" id="r_a38e560b5a271c962b5e2d5bd726582b0"><td class="memItemLeft" align="right" valign="top"><a id="a38e560b5a271c962b5e2d5bd726582b0" name="a38e560b5a271c962b5e2d5bd726582b0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CTRL_D</b>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a38e560b5a271c962b5e2d5bd726582b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8751d8b101fef3c1d372bab4cd16e318" id="r_a8751d8b101fef3c1d372bab4cd16e318"><td class="memItemLeft" align="right" valign="top"><a id="a8751d8b101fef3c1d372bab4cd16e318" name="a8751d8b101fef3c1d372bab4cd16e318"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CTRL_C</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a8751d8b101fef3c1d372bab4cd16e318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7de2441cb422b387b1e57007584c6b2f" id="r_a7de2441cb422b387b1e57007584c6b2f"><td class="memItemLeft" align="right" valign="top"><a id="a7de2441cb422b387b1e57007584c6b2f" name="a7de2441cb422b387b1e57007584c6b2f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>IS_ATTY_PRINT</b>(str)&#160;&#160;&#160;if (isatty(0)) <a class="el" href="include_2my_8h.html#acfc5d69edef049c3fe6c3a4a724654d2">my_putstr</a>(str)</td></tr>
+<tr class="separator:a7de2441cb422b387b1e57007584c6b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -221,6 +230,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a44e017c1c5707146c69e828e64e800d2" id="r_a44e017c1c5707146c69e828e64e800d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44e017c1c5707146c69e828e64e800d2">exec_else_if</a> (<a class="el" href="structmysh__s.html">mysh_t</a> *mysh, char **line_content)</td></tr>
 <tr class="memdesc:a44e017c1c5707146c69e828e64e800d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The else if builtin.  <br /></td></tr>
 <tr class="separator:a44e017c1c5707146c69e828e64e800d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ede9de6e91a986a8f4b32bcfb9e0016" id="r_a7ede9de6e91a986a8f4b32bcfb9e0016"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ede9de6e91a986a8f4b32bcfb9e0016">exec_end</a> (<a class="el" href="structmysh__s.html">mysh_t</a> *mysh)</td></tr>
+<tr class="memdesc:a7ede9de6e91a986a8f4b32bcfb9e0016"><td class="mdescLeft">&#160;</td><td class="mdescRight">The end builtin.  <br /></td></tr>
+<tr class="separator:a7ede9de6e91a986a8f4b32bcfb9e0016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab466563b4d9b523ca32531fa5642df15" id="r_ab466563b4d9b523ca32531fa5642df15"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab466563b4d9b523ca32531fa5642df15">exec_endif</a> (<a class="el" href="structmysh__s.html">mysh_t</a> *mysh)</td></tr>
 <tr class="memdesc:ab466563b4d9b523ca32531fa5642df15"><td class="mdescLeft">&#160;</td><td class="mdescRight">The endif builtin.  <br /></td></tr>
 <tr class="separator:ab466563b4d9b523ca32531fa5642df15"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,6 +281,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac250bd6e7d5472b870dbbb0eaee36fd1" id="r_ac250bd6e7d5472b870dbbb0eaee36fd1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac250bd6e7d5472b870dbbb0eaee36fd1">exec_which</a> (<a class="el" href="structmysh__s.html">mysh_t</a> *mysh)</td></tr>
 <tr class="memdesc:ac250bd6e7d5472b870dbbb0eaee36fd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The which builtin.  <br /></td></tr>
 <tr class="separator:ac250bd6e7d5472b870dbbb0eaee36fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0af467f1a8a33e4e7914c10fbba2ed65" id="r_a0af467f1a8a33e4e7914c10fbba2ed65"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0af467f1a8a33e4e7914c10fbba2ed65">free_str_and_tab</a> (char *str, char **tab)</td></tr>
+<tr class="memdesc:a0af467f1a8a33e4e7914c10fbba2ed65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free an string and his array.  <br /></td></tr>
+<tr class="separator:a0af467f1a8a33e4e7914c10fbba2ed65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbf8844693b9a7029c360b0e6155ff3d" id="r_adbf8844693b9a7029c360b0e6155ff3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbf8844693b9a7029c360b0e6155ff3d">free_input_list</a> (<a class="el" href="structmysh__s.html">mysh_t</a> *mysh)</td></tr>
 <tr class="memdesc:adbf8844693b9a7029c360b0e6155ff3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the input list.  <br /></td></tr>
 <tr class="separator:adbf8844693b9a7029c360b0e6155ff3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1052,6 +1067,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Disable the buffer. </p>
+<dl class="section note"><dt>Note</dt><dd>We'll need to disable the buffer when we want to my_getline </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><b>int</b> <u>0</u> if the buffer is disabled, <u>-1</u> otherwise </dd></dl>
 
 </div>
@@ -1295,6 +1311,32 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><b>int</b> <u>0</u> if the command succeed, <u>1</u> otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a7ede9de6e91a986a8f4b32bcfb9e0016" name="a7ede9de6e91a986a8f4b32bcfb9e0016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ede9de6e91a986a8f4b32bcfb9e0016">&#9670;&#160;</a></span>exec_end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int exec_end </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmysh__s.html">mysh_t</a> *</td>          <td class="paramname"><span class="paramname"><em>mysh</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The end builtin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mysh</td><td>The shell structure </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><b>int</b> Always <u>1</u> </dd></dl>
 
 </div>
 </div>
@@ -1908,6 +1950,37 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><b>void</b> </dd></dl>
+
+</div>
+</div>
+<a id="a0af467f1a8a33e4e7914c10fbba2ed65" name="a0af467f1a8a33e4e7914c10fbba2ed65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0af467f1a8a33e4e7914c10fbba2ed65">&#9670;&#160;</a></span>free_str_and_tab()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * free_str_and_tab </td>
+          <td>(</td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>tab</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free an string and his array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The string to free </td></tr>
+    <tr><td class="paramname">tab</td><td>The array of the string to free </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><b>void *</b> Always <u>NULL</u> </dd></dl>
 
 </div>
 </div>
