@@ -36,13 +36,39 @@ static void current_branch(void)
 }
 
 /**
+ * @brief Change the path to the previous folder
+ * @param path The path to change
+ * @return <b>void</b>
+ */
+static void previous_folder(char *path)
+{
+    for (int index = my_strlen(path) - 1; index >= 0; index--) {
+        if (path[index] == '/') {
+            path[index] = '\0';
+            break;
+        }
+    }
+}
+
+/**
  * @brief Check if we are in a git repository and display the branch
  * @return <b>void</b>
  */
 void is_git_repository(void)
 {
-    if (access(".git", X_OK) == 0) {
-        my_printf("\033[32m 🐱\033[0m");
-        current_branch();
+    char *pwd = getcwd(NULL, 0);
+    char *path = my_strdup(pwd);
+
+    while (my_str_contains(path, "/")) {
+        if (access(".git", X_OK) == 0) {
+            my_printf("\033[32m 🐱\033[0m");
+            current_branch();
+            break;
+        }
+        previous_folder(path);
+        chdir(path);
     }
+    chdir(pwd);
+    FREE(pwd);
+    FREE(path);
 }
