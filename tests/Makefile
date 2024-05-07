@@ -177,6 +177,7 @@ SRCS		+=	../src/builtins/alias.c
 SRCS		+=	../src/builtins/cd.c
 SRCS		+=	../src/builtins/echo.c
 SRCS		+=	../src/builtins/else.c
+SRCS		+=	../src/builtins/end.c
 SRCS		+=	../src/builtins/endif.c
 SRCS		+=	../src/builtins/env.c
 SRCS		+=	../src/builtins/exec.c

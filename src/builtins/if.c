@@ -48,25 +48,25 @@ static int exec_true_condition(mysh_t *mysh, char **args, int start)
  */
 static char **read_input(mysh_t *mysh)
 {
-    size_t size = 0;
+    int size = 0;
     char *line = NULL;
     char **content = NULL;
 
-    while ((int)size != EOF && (content == NULL ||
+    while (size != EOF && (content == NULL ||
     (my_strcmp(content[0], "endif") && my_strcmp(content[0], "else")))) {
-        if (isatty(0) == 1)
-            my_putstr("if? ");
+        IS_ATTY_PRINT("if? ");
+        free_str_and_tab(line, NULL);
         size = my_getline(&line, stdin);
         set_command_in_history(mysh, line);
-        FREE_WORD_ARRAY(content);
+        free_str_and_tab(NULL, content);
         content = str_to_array_inhibitors(line);
     }
-    if (content != NULL && my_strcmp(content[0], "endif")
-    && my_strcmp(content[0], "else")) {
+    if (size == EOF || (content != NULL && my_strcmp(content[0], "endif")
+    && my_strcmp(content[0], "else"))) {
         my_putstr_error("then: then/endif not found.\n");
-        return NULL;
+        return free_str_and_tab(line, content);
     }
-    FREE(line);
+    free_str_and_tab(line, NULL);
     return content;
 }
 
@@ -78,13 +78,21 @@ static char **read_input(mysh_t *mysh)
 static int exec_false_condition(mysh_t *mysh)
 {
     char **line_content = read_input(mysh);
+    char **new_line_content = NULL;
 
-    if (line_content == NULL || line_content[0] == NULL)
+    if (line_content == NULL || line_content[0] == NULL) {
+        FREE_WORD_ARRAY(line_content);
         return 1;
-    if (my_strcmp(line_content[0], "endif") == 0)
+    }
+    if (my_strcmp(line_content[0], "endif") == 0) {
+        FREE_WORD_ARRAY(line_content);
         return 0;
-    if (my_strncmp(line_content[1], "if", 2) != 0)
-        return exec_true_condition(mysh, line_content, 1);
+    }
+    if (my_strncmp(line_content[1], "if", 2) != 0) {
+        new_line_content = my_malloc_strdup_word_array(line_content);
+        FREE_WORD_ARRAY(line_content);
+        return exec_true_condition(mysh, new_line_content, 1);
+    }
     mysh->exit_status = exec_else_if(mysh, line_content);
     FREE_WORD_ARRAY(line_content);
     return mysh->exit_status;

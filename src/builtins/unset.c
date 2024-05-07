@@ -2,8 +2,12 @@
 ** EPITECH PROJECT, 2023
 ** 42sh
 ** File description:
-** unset
+** The file containing the unset builtin
 */
+/**
+ * @file unset.c
+ * @brief The file containing the unset builtin
+ */
 
 #include "../../include/myshell.h"
 

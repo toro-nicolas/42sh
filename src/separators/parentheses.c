@@ -2,12 +2,11 @@
 ** EPITECH PROJECT, 2024
 ** 42sh
 ** File description:
-** The parentheses.c
+** The file containing the parentheses functions
 */
 /**
  * @file parentheses.c
- * @brief The parentheses.c
- * @author Nicolas TORO
+ * @brief The file containing the parentheses functions
  */
 
 #include "../../include/myshell.h"

@@ -12,6 +12,21 @@
 #include "../../include/myshell.h"
 
 /**
+ * @brief Free an string and his array
+ * @param str The string to free
+ * @param tab The array of the string to free
+ * @return <b>void *</b> Always <u>NULL</u>
+ */
+void *free_str_and_tab(char *str, char **tab)
+{
+    if (str != NULL)
+        FREE(str);
+    if (tab != NULL)
+        FREE_WORD_ARRAY(tab);
+    return NULL;
+}
+
+/**
  * @brief Free the input list
  * @param mysh The shell structure
  * @return <b>void</b>

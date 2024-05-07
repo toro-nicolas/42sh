@@ -58,14 +58,17 @@ void check_tty(void)
 void shell(char **env)
 {
     mysh_t *mysh = init_shell(env);
-    size_t size = 0;
+    int getline_status = 0;
 
     check_42shrc(mysh);
     check_path(mysh);
     create_history(mysh);
     while (1) {
         check_tty();
-        if (my_getline(&mysh->line, stdin) == -1)
+        getline_status = my_getline(&mysh->line, stdin);
+        if (getline_status == -1 && isatty(0) == 1)
+            my_putstr("exit\n");
+        if (getline_status == -1)
             my_exit(mysh, mysh->exit_status, NULL);
         if (mysh->line == NULL)
             continue;

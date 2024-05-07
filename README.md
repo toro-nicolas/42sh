@@ -52,6 +52,7 @@ Our **42sh** includes many of the **features found** in **TCSH** :
   - cd
   - echo
   - else
+  - end
   - endif
   - env
   - exit
@@ -82,7 +83,7 @@ Our **42sh** includes many of the **features found** in **TCSH** :
 - Handle parentheses ("()")
 - Handle globbing ("*", "?", "[" and "]")
 - Handle alias
-- Handle scripting and scripting commands (if, else, endif and foreach)
+- Handle scripting and scripting commands (if, else, endif, foreach and end)
 
 
 ## Result 🚩

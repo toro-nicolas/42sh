@@ -18,19 +18,23 @@
  */
 int exec_else(mysh_t *mysh)
 {
-    size_t size = 0;
+    int size = 0;
     char *line = NULL;
+    char **content = NULL;
 
-    while ((int)size != EOF && my_strcmp(line, "endif\n") != 0) {
-        if (isatty(0) == 1)
-            my_putstr("else? ");
+    while (size != -1 && (content == NULL || my_strcmp(content[0], "endif"))) {
+        IS_ATTY_PRINT("else? ");
+        free_str_and_tab(line, NULL);
         size = my_getline(&line, stdin);
         set_command_in_history(mysh, line);
+        free_str_and_tab(NULL, content);
+        content = str_to_array_inhibitors(line);
     }
-    if (my_strcmp(line, "endif\n") != 0) {
+    if (size == EOF || (content != NULL && my_strcmp(content[0], "endif"))) {
         my_putstr_error("else: endif not found.\n");
+        free_str_and_tab(line, content);
         return 1;
     }
-    FREE(line);
+    free_str_and_tab(line, content);
     return 0;
 }

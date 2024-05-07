@@ -34,6 +34,7 @@ void restore_termios(struct termios *saved_termios)
 
 /**
  * @brief Disable the buffer
+ * @note We'll need to disable the buffer when we want to my_getline
  * @return <b>int</b> <u>0</u> if the buffer is disabled, <u>-1</u> otherwise
  */
 int disable_buffer(void)

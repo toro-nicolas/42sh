@@ -21,13 +21,13 @@ builtin_t *get_builtin_command(int index)
     static builtin_t commands[] = {
         {"about", &exec_about}, {"alias", &exec_alias},
         {"cd", &exec_cd}, {"echo", &exec_echo},
-        {"else", &exec_else}, {"endif", &exec_endif}, {"env", &exec_env},
-        {"exit", &exec_exit}, {"foreach", &exec_foreach}, {"help", &exec_help},
-        {"history", &exec_history}, {"if", &exec_if}, {"repeat", &exec_repeat},
-        {"set", &exec_set}, {"setenv", &exec_setenv}, {"source", &exec_source},
-        {"unalias", &exec_unalias}, {"unset", &exec_unset},
-        {"unsetenv", &exec_unsetenv}, {"where", &exec_where},
-        {"which", &exec_which}, {NULL, &exec_command}
+        {"else", &exec_else}, {"end", &exec_end}, {"endif", &exec_endif},
+        {"env", &exec_env}, {"exit", &exec_exit}, {"foreach", &exec_foreach},
+        {"help", &exec_help}, {"history", &exec_history}, {"if", &exec_if},
+        {"repeat", &exec_repeat}, {"set", &exec_set}, {"setenv", &exec_setenv},
+        {"source", &exec_source}, {"unalias", &exec_unalias},
+        {"unset", &exec_unset}, {"unsetenv", &exec_unsetenv},
+        {"where", &exec_where}, {"which", &exec_which}, {NULL, &exec_command}
     };
 
     return &commands[index];

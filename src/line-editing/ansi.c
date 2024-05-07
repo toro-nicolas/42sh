@@ -11,6 +11,13 @@
 
 #include "../../include/myshell.h"
 
+/**
+ * @brief Execute the up action to move in the history
+ * @param str The string to move
+ * @param pos The position of the cursor
+ * @param tmp The head of the history
+ * @return <b>void</b>
+ */
 static void up_to(char *str, int *pos, node_t **tmp)
 {
     if (*tmp == NULL)
@@ -27,7 +34,14 @@ static void up_to(char *str, int *pos, node_t **tmp)
     pos[1] = pos[0];
 }
 
-static void down(char *str, int *pos, node_t **tmp)
+/**
+ * @brief Execute the down action to move in the history
+ * @param str The string to move
+ * @param pos The position of the cursor
+ * @param tmp The head of the history
+ * @return <b>void</b>
+ */
+static void down_to(char *str, int *pos, node_t **tmp)
 {
     if (*tmp == NULL)
         return;
@@ -43,6 +57,14 @@ static void down(char *str, int *pos, node_t **tmp)
     pos[1] = pos[0];
 }
 
+/**
+ * @brief Handle the vertical arrow
+ * @param c The character
+ * @param pos The position of the cursor
+ * @param str The string
+ * @param str2 The second string
+ * @return
+ */
 static int vertical_arrow(char c, int *pos, char *str, char **str2)
 {
     static node_t *tmp = NULL;
@@ -58,12 +80,20 @@ static int vertical_arrow(char c, int *pos, char *str, char **str2)
     if (c == 'B') {
         if (pos[0] != pos[1])
             return 0;
-        down(str, pos, &tmp);
+        down_to(str, pos, &tmp);
         return 0;
     }
     return 1;
 }
 
+/**
+ * @brief Handle the horizontal arrow
+ * @param c The character
+ * @param pos The position of the cursor
+ * @param str The string
+ * @param str2 The second string
+ * @return
+ */
 static int horizontal_arrow(char c, int *pos, char *str, char **str2)
 {
     if (c == 'C') {

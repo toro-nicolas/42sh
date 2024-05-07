@@ -56,14 +56,14 @@ static void child_process(mysh_t *mysh, input_command_t *input, int fd[2])
  */
 static void read_input(mysh_t *mysh, input_command_t *input, node_t **node)
 {
-    size_t size = 0;
+    int size = 0;
     char *line = NULL;
 
-    while ((int)size != EOF && my_strcmp(line, input->left) != 0) {
+    while (size != EOF && my_strcmp(line, input->left) != 0) {
         if (line != NULL)
             my_push_back(node, my_strdup(line), STRING);
-        if (isatty(0) == 1)
-            my_putstr("? ");
+        IS_ATTY_PRINT("? ");
+        FREE(line);
         size = my_getline(&line, stdin);
         set_command_in_history(mysh, line);
     }

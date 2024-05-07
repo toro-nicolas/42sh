@@ -16,6 +16,10 @@
     #define MYSHELL_H_
 
     #define CTRL_KEYPRESS(k) ((k)  & 0x1f)
+    #define CTRL_D 4
+    #define CTRL_C 3
+
+    #define IS_ATTY_PRINT(str) if (isatty(0)) my_putstr(str)
 
 // TYPEDEFS :
 
@@ -240,7 +244,6 @@ int exec_command(mysh_t *mysh);
  */
 int exec_echo(mysh_t *mysh);
 
-
 /**
  * @brief The else builtin
  * @param mysh The shell structure
@@ -255,6 +258,13 @@ int exec_else(mysh_t *mysh);
  * @return <b>int</b> <u>0</u> if the command succeed, <u>1</u> otherwise
  */
 int exec_else_if(mysh_t *mysh, char **line_content);
+
+/**
+ * @brief The end builtin
+ * @param mysh The shell structure
+ * @return <b>int</b> Always <u>1</u>
+ */
+int exec_end(mysh_t *mysh);
 
 /**
  * @brief The endif builtin
@@ -375,6 +385,14 @@ int exec_which(mysh_t *mysh);
 
 
     // Exit functions
+
+/**
+ * @brief Free an string and his array
+ * @param str The string to free
+ * @param tab The array of the string to free
+ * @return <b>void *</b> Always <u>NULL</u>
+ */
+void *free_str_and_tab(char *str, char **tab);
 
 /**
 * @brief Free the input list
@@ -653,6 +671,7 @@ void restore_termios(struct termios *saved_termios);
 
 /**
  * @brief Disable the buffer
+ * @note We'll need to disable the buffer when we want to my_getline
  * @return <b>int</b> <u>0</u> if the buffer is disabled, <u>-1</u> otherwise
  */
 int disable_buffer(void);
