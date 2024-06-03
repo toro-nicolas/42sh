@@ -10,7 +10,7 @@
 - [Compilation](https://github.com/toro-nicolas/42sh/blob/main/README.md#compilation-%EF%B8%8F)
 - [Documentation](https://github.com/toro-nicolas/42sh/blob/main/README.md#documentation-)
 - [Code mandatory](https://github.com/toro-nicolas/42sh/blob/main/README.md#code-mandatory-)
-- [What's next ?](https://github.com/toro-nicolas/42sh/blob/main/README.md#whats-next-)
+- [What's next ?](https://github.com/toro-nicolas/42sh/blob/main/README.md#whats-next--)
 - [Contributors](https://github.com/toro-nicolas/42sh/blob/main/README.md#contributors-)
 
 ## Description 📝
