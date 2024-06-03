@@ -10,6 +10,7 @@
 - [Compilation](https://github.com/toro-nicolas/42sh/blob/main/README.md#compilation-%EF%B8%8F)
 - [Documentation](https://github.com/toro-nicolas/42sh/blob/main/README.md#documentation-)
 - [Code mandatory](https://github.com/toro-nicolas/42sh/blob/main/README.md#code-mandatory-)
+- [What's next ?](https://github.com/toro-nicolas/42sh/blob/main/README.md#whats-next-)
 - [Contributors](https://github.com/toro-nicolas/42sh/blob/main/README.md#contributors-)
 
 ## Description 📝
@@ -192,6 +193,12 @@ You need multiple package for generate them :
   - ```[~]``` : Feature modification
 
 **Of course, in exceptional cases, we may depart from these rules.**  
+
+## What's next ? 🚀
+- Fix the latest scripting problems
+- Fix final bugs in prompt and command writing
+- Add job controls (background process, ctrl + Z, ...)
+- Add unit tests on each piece of code
 
 ## Contributors 👥
 For this project, we were a group of **5 people**. Here are the people in the group:  
