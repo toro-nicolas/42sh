@@ -22,6 +22,8 @@ void set_command_in_history(mysh_t *mysh, char *line)
     char *buffer = NULL;
     size_t len = 0;
 
+    if (line == NULL)
+        return;
     while (getline(&buffer, &len, mysh->fd_history) != EOF) {
         if (buffer[my_strlen(buffer) - 1] == '\n')
             buffer[my_strlen(buffer) - 1] = '\0';

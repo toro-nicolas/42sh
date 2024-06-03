@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"my__malloc__strndup_8c.html":[2,0,1,2,6],
 "my__malloc__strndup_8c.html#a161966d6de4894bec46cb88ca40f535b":[2,0,1,2,6,0],
 "my__memchr_8c.html":[2,0,1,2,7],
 "my__memchr_8c.html#aeff32b685c9df20745475c500c032ea7":[2,0,1,2,7,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "myshell_8h.html#ae2fe39da9129e6fdcaa9b76417c4e8a2":[2,0,0,3,83],
 "myshell_8h.html#ae3382f1d7553d7ab12ba436c083ae069":[2,0,0,3,60],
 "myshell_8h.html#ae547754c35fc38ef36549969f4e72d06":[2,0,0,3,16],
-"myshell_8h.html#af004e503e79645136b2fea089261f0c5":[2,0,0,3,9],
-"myshell_8h.html#af060838e2c2cb6125f8f2ab5f581d10a":[2,0,0,3,52]
+"myshell_8h.html#af004e503e79645136b2fea089261f0c5":[2,0,0,3,9]
 };

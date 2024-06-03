@@ -27,7 +27,7 @@
     </tr>
     <tr>
       <th scope="row">Date:</th>
-      <td>2024-05-07 11:25:02</td>
+      <td>2024-06-04 00:51:07</td>
     </tr>
   </table>
 </div>
@@ -41,9 +41,9 @@
     </tr>
     <tr>
       <th scope="row">Lines:</th>
-      <td>24</td>
-      <td>31</td>
-      <td class="coverage-medium">77.4%</td>
+      <td>25</td>
+      <td>32</td>
+      <td class="coverage-medium">78.1%</td>
     </tr>
     <tr>
       <th scope="row">Functions:</th>
@@ -53,9 +53,9 @@
     </tr>
     <tr>
       <th scope="row">Branches:</th>
-      <td>11</td>
-      <td>20</td>
-      <td class="coverage-low">55.0%</td>
+      <td>12</td>
+      <td>22</td>
+      <td class="coverage-low">54.5%</td>
     </tr>
   </table>
 </div>
@@ -75,13 +75,13 @@
     </tr>
     <tr>
       <td>
-        <a href="#l42">create_history</a>
+        <a href="#l44">create_history</a>
       </td>
       <td>
-        <a href="#l42">42</a>
+        <a href="#l44">44</a>
       </td>
       <td>
-        <a href="#l42"> called 306 times</a>
+        <a href="#l44"> called 372 times</a>
       </td>
     </tr>
     <tr>
@@ -92,7 +92,7 @@
         <a href="#l20">20</a>
       </td>
       <td>
-        <a href="#l20"> called 746 times</a>
+        <a href="#l20"> called 1010 times</a>
       </td>
     </tr>
   </table>
@@ -246,7 +246,7 @@
       <td class="lineno"><a id="l20" href="#l20">20</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">746</td>
+      <td class="linecount coveredLine">1010</td>
       <td class="src coveredLine"><span class="kt">void</span><span class="w"> </span><span class="nf">set_command_in_history</span><span class="p">(</span><span class="n">mysh_t</span><span class="w"> </span><span class="o">*</span><span class="n">mysh</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">line</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
@@ -260,14 +260,14 @@
       <td class="lineno"><a id="l22" href="#l22">22</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">746</td>
+      <td class="linecount coveredLine">1010</td>
       <td class="src coveredLine"><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l23" href="#l23">23</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">746</td>
+      <td class="linecount coveredLine">1010</td>
       <td class="src coveredLine"><span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="n">len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
@@ -281,330 +281,351 @@
       <td class="lineno"><a id="l25" href="#l25">25</a></td>
       <td class="linebranch">
         <details class="linebranchDetails">
-        <summary class="linebranchSummary">1/2</summary>
+        <summary class="linebranchSummary">2/2</summary>
         <div class="linebranchContents">
-          <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
-          <div class="takenBranch">&check; Branch 2 taken 746 times.</div>
+          <div class="takenBranch">&check; Branch 0 taken 8 times.</div>
+          <div class="takenBranch">&check; Branch 1 taken 1002 times.</div>
         </div>
         </details>
       </td>
-      <td class="linecount coveredLine">746</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">getline</span><span class="p">(</span><span class="o">&amp;</span><span class="n">buffer</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">len</span><span class="p">,</span><span class="w"> </span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">fd_history</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">EOF</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount coveredLine">1010</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">line</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l26" href="#l26">26</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="n">my_strlen</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">)</span></td>
+      <td class="linecount coveredLine">8</td>
+      <td class="src coveredLine"><span class="w">        </span><span class="k">return</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l27" href="#l27">27</a></td>
       <td class="linebranch">
+        <details class="linebranchDetails">
+        <summary class="linebranchSummary">1/2</summary>
+        <div class="linebranchContents">
+          <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
+          <div class="takenBranch">&check; Branch 2 taken 1002 times.</div>
+        </div>
+        </details>
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="n">buffer</span><span class="p">[</span><span class="n">my_strlen</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;\0&#39;</span><span class="p">;</span></td>
+      <td class="linecount coveredLine">1002</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">getline</span><span class="p">(</span><span class="o">&amp;</span><span class="n">buffer</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">len</span><span class="p">,</span><span class="w"> </span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">fd_history</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">EOF</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l28" href="#l28">28</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="sc">&#39;\0&#39;</span><span class="p">)</span></td>
+      <td class="src uncoveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="n">my_strlen</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l29" href="#l29">29</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="n">my_push_back_circled</span><span class="p">(</span><span class="o">&amp;</span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">history</span><span class="p">,</span><span class="w"> </span><span class="n">my_strdup</span><span class="p">(</span><span class="n">buffer</span><span class="p">),</span><span class="w"> </span><span class="n">STRING</span><span class="p">);</span></td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="n">buffer</span><span class="p">[</span><span class="n">my_strlen</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;\0&#39;</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l30" href="#l30">30</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="sc">&#39;\0&#39;</span><span class="p">)</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l31" href="#l31">31</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount uncoveredLine">&cross;</td>
+      <td class="src uncoveredLine"><span class="w">            </span><span class="n">my_push_back_circled</span><span class="p">(</span><span class="o">&amp;</span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">history</span><span class="p">,</span><span class="w"> </span><span class="n">my_strdup</span><span class="p">(</span><span class="n">buffer</span><span class="p">),</span><span class="w"> </span><span class="n">STRING</span><span class="p">);</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l32" href="#l32">32</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "><span class="w">    </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l31" href="#l31">31</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount coveredLine">746</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="n">FREE</span><span class="p">(</span><span class="n">buffer</span><span class="p">);</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l32" href="#l32">32</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount coveredLine">746</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="n">fwrite</span><span class="p">(</span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="n">my_strlen</span><span class="p">(</span><span class="n">line</span><span class="p">),</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">fd_history</span><span class="p">);</span></td>
-    </tr>
-    <tr class="source-line">
       <td class="lineno"><a id="l33" href="#l33">33</a></td>
       <td class="linebranch">
-        <details class="linebranchDetails">
-        <summary class="linebranchSummary">3/4</summary>
-        <div class="linebranchContents">
-          <div class="takenBranch">&check; Branch 0 taken 744 times.</div>
-          <div class="takenBranch">&check; Branch 1 taken 2 times.</div>
-          <div class="takenBranch">&check; Branch 2 taken 744 times.</div>
-          <div class="notTakenBranch">&cross; Branch 3 not taken.</div>
-        </div>
-        </details>
       </td>
-      <td class="linecount coveredLine">746</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">line</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb">NULL</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">line</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="sc">&#39;\0&#39;</span><span class="p">)</span></td>
+      <td class="linecount coveredLine">1002</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">FREE</span><span class="p">(</span><span class="n">buffer</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l34" href="#l34">34</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">744</td>
-      <td class="src coveredLine"><span class="w">        </span><span class="n">my_push_back_circled</span><span class="p">(</span><span class="o">&amp;</span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">history</span><span class="p">,</span><span class="w"> </span><span class="n">my_strdup</span><span class="p">(</span><span class="n">line</span><span class="p">),</span><span class="w"> </span><span class="n">STRING</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">1002</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">fwrite</span><span class="p">(</span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="n">my_strlen</span><span class="p">(</span><span class="n">line</span><span class="p">),</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">fd_history</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l35" href="#l35">35</a></td>
       <td class="linebranch">
+        <details class="linebranchDetails">
+        <summary class="linebranchSummary">2/4</summary>
+        <div class="linebranchContents">
+          <div class="takenBranch">&check; Branch 0 taken 1002 times.</div>
+          <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
+          <div class="takenBranch">&check; Branch 2 taken 1002 times.</div>
+          <div class="notTakenBranch">&cross; Branch 3 not taken.</div>
+        </div>
+        </details>
       </td>
-      <td class="linecount coveredLine">746</td>
-      <td class="src coveredLine"><span class="p">}</span></td>
+      <td class="linecount coveredLine">1002</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">line</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb">NULL</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">line</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="sc">&#39;\0&#39;</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l36" href="#l36">36</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="linecount coveredLine">1002</td>
+      <td class="src coveredLine"><span class="w">        </span><span class="n">my_push_back_circled</span><span class="p">(</span><span class="o">&amp;</span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">history</span><span class="p">,</span><span class="w"> </span><span class="n">my_strdup</span><span class="p">(</span><span class="n">line</span><span class="p">),</span><span class="w"> </span><span class="n">STRING</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l37" href="#l37">37</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="cm">/**</span></td>
+      <td class="src "><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l38" href="#l38">38</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="cm"> * @brief Create the history file</span></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l39" href="#l39">39</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="cm"> * @param mysh The shell structure</span></td>
+      <td class="src "><span class="cm">/**</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l40" href="#l40">40</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="cm"> * @return &lt;b&gt;void&lt;/b&gt;</span></td>
+      <td class="src "><span class="cm"> * @brief Create the history file</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l41" href="#l41">41</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="cm"> */</span></td>
+      <td class="src "><span class="cm"> * @param mysh The shell structure</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l42" href="#l42">42</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">306</td>
-      <td class="src coveredLine"><span class="kt">void</span><span class="w"> </span><span class="nf">create_history</span><span class="p">(</span><span class="n">mysh_t</span><span class="w"> </span><span class="o">*</span><span class="n">mysh</span><span class="p">)</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="cm"> * @return &lt;b&gt;void&lt;/b&gt;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l43" href="#l43">43</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="p">{</span></td>
+      <td class="src "><span class="cm"> */</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l44" href="#l44">44</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">306</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">home</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">get_env_var</span><span class="p">(</span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">env</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;HOME&quot;</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">372</td>
+      <td class="src coveredLine"><span class="kt">void</span><span class="w"> </span><span class="nf">create_history</span><span class="p">(</span><span class="n">mysh_t</span><span class="w"> </span><span class="o">*</span><span class="n">mysh</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l45" href="#l45">45</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">306</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="n">len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l46" href="#l46">46</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">306</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span></td>
+      <td class="linecount coveredLine">372</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">home</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">get_env_var</span><span class="p">(</span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">env</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;HOME&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l47" href="#l47">47</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount coveredLine">372</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="n">len</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l48" href="#l48">48</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount coveredLine">372</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l49" href="#l49">49</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l48" href="#l48">48</a></td>
+      <td class="lineno"><a id="l50" href="#l50">50</a></td>
       <td class="linebranch">
         <details class="linebranchDetails">
         <summary class="linebranchSummary">1/2</summary>
         <div class="linebranchContents">
-          <div class="takenBranch">&check; Branch 0 taken 306 times.</div>
+          <div class="takenBranch">&check; Branch 0 taken 372 times.</div>
           <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
         </div>
         </details>
       </td>
-      <td class="linecount coveredLine">306</td>
+      <td class="linecount coveredLine">372</td>
       <td class="src coveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">home</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l49" href="#l49">49</a></td>
+      <td class="lineno"><a id="l51" href="#l51">51</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">306</td>
+      <td class="linecount coveredLine">372</td>
       <td class="src coveredLine"><span class="w">        </span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">history_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">my_malloc_strdup</span><span class="p">(</span><span class="s">&quot;./.42sh_history&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l50" href="#l50">50</a></td>
+      <td class="lineno"><a id="l52" href="#l52">52</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "><span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l51" href="#l51">51</a></td>
+      <td class="lineno"><a id="l53" href="#l53">53</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
       <td class="src uncoveredLine"><span class="w">        </span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">history_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CALLOC</span><span class="p">(</span><span class="n">my_strlen</span><span class="p">(</span><span class="n">home</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span><span class="p">));</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l52" href="#l52">52</a></td>
+      <td class="lineno"><a id="l54" href="#l54">54</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
       <td class="src uncoveredLine"><span class="w">        </span><span class="n">my_strcat</span><span class="p">(</span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">history_path</span><span class="p">,</span><span class="w"> </span><span class="n">home</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l53" href="#l53">53</a></td>
+      <td class="lineno"><a id="l55" href="#l55">55</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount uncoveredLine">&cross;</td>
       <td class="src uncoveredLine"><span class="w">        </span><span class="n">my_strcat</span><span class="p">(</span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">history_path</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/.42sh_history</span><span class="se">\0</span><span class="s">&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l54" href="#l54">54</a></td>
+      <td class="lineno"><a id="l56" href="#l56">56</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "><span class="w">    </span><span class="p">}</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l55" href="#l55">55</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount coveredLine">306</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">fd_history</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fopen</span><span class="p">(</span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">history_path</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;a+&quot;</span><span class="p">);</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l56" href="#l56">56</a></td>
-      <td class="linebranch">
-        <details class="linebranchDetails">
-        <summary class="linebranchSummary">3/4</summary>
-        <div class="linebranchContents">
-          <div class="takenBranch">&check; Branch 0 taken 129730 times.</div>
-          <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
-          <div class="takenBranch">&check; Branch 2 taken 129424 times.</div>
-          <div class="takenBranch">&check; Branch 3 taken 306 times.</div>
-        </div>
-        </details>
-      </td>
-      <td class="linecount coveredLine">259460</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">fd_history</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb">NULL</span><span class="w"> </span><span class="o">&amp;&amp;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l57" href="#l57">57</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">129730</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="n">getline</span><span class="p">(</span><span class="o">&amp;</span><span class="n">buffer</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">len</span><span class="p">,</span><span class="w"> </span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">fd_history</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">EOF</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount coveredLine">372</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">fd_history</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fopen</span><span class="p">(</span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">history_path</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;a+&quot;</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l58" href="#l58">58</a></td>
       <td class="linebranch">
         <details class="linebranchDetails">
-        <summary class="linebranchSummary">1/2</summary>
+        <summary class="linebranchSummary">3/4</summary>
         <div class="linebranchContents">
-          <div class="takenBranch">&check; Branch 1 taken 129424 times.</div>
-          <div class="notTakenBranch">&cross; Branch 2 not taken.</div>
+          <div class="takenBranch">&check; Branch 0 taken 218317 times.</div>
+          <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
+          <div class="takenBranch">&check; Branch 2 taken 217945 times.</div>
+          <div class="takenBranch">&check; Branch 3 taken 372 times.</div>
         </div>
         </details>
       </td>
-      <td class="linecount coveredLine">129424</td>
-      <td class="src coveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="n">my_strlen</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">)</span></td>
+      <td class="linecount coveredLine">436634</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">fd_history</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb">NULL</span><span class="w"> </span><span class="o">&amp;&amp;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l59" href="#l59">59</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">129424</td>
-      <td class="src coveredLine"><span class="w">            </span><span class="n">buffer</span><span class="p">[</span><span class="n">my_strlen</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;\0&#39;</span><span class="p">;</span></td>
+      <td class="linecount coveredLine">218317</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">getline</span><span class="p">(</span><span class="o">&amp;</span><span class="n">buffer</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">len</span><span class="p">,</span><span class="w"> </span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">fd_history</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">EOF</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l60" href="#l60">60</a></td>
       <td class="linebranch">
         <details class="linebranchDetails">
-        <summary class="linebranchSummary">2/2</summary>
+        <summary class="linebranchSummary">1/2</summary>
         <div class="linebranchContents">
-          <div class="takenBranch">&check; Branch 0 taken 128822 times.</div>
-          <div class="takenBranch">&check; Branch 1 taken 602 times.</div>
+          <div class="takenBranch">&check; Branch 1 taken 217945 times.</div>
+          <div class="notTakenBranch">&cross; Branch 2 not taken.</div>
         </div>
         </details>
       </td>
-      <td class="linecount coveredLine">129424</td>
-      <td class="src coveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="sc">&#39;\0&#39;</span><span class="p">)</span></td>
+      <td class="linecount coveredLine">217945</td>
+      <td class="src coveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="n">my_strlen</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;\n&#39;</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l61" href="#l61">61</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">128822</td>
-      <td class="src coveredLine"><span class="w">            </span><span class="n">my_push_back_circled</span><span class="p">(</span><span class="o">&amp;</span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">history</span><span class="p">,</span><span class="w"> </span><span class="n">my_strdup</span><span class="p">(</span><span class="n">buffer</span><span class="p">),</span><span class="w"> </span><span class="n">STRING</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">217945</td>
+      <td class="src coveredLine"><span class="w">            </span><span class="n">buffer</span><span class="p">[</span><span class="n">my_strlen</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;\0&#39;</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l62" href="#l62">62</a></td>
+      <td class="linebranch">
+        <details class="linebranchDetails">
+        <summary class="linebranchSummary">2/2</summary>
+        <div class="linebranchContents">
+          <div class="takenBranch">&check; Branch 0 taken 216982 times.</div>
+          <div class="takenBranch">&check; Branch 1 taken 963 times.</div>
+        </div>
+        </details>
+      </td>
+      <td class="linecount coveredLine">217945</td>
+      <td class="src coveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">buffer</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="sc">&#39;\0&#39;</span><span class="p">)</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l63" href="#l63">63</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount coveredLine">216982</td>
+      <td class="src coveredLine"><span class="w">            </span><span class="n">my_push_back_circled</span><span class="p">(</span><span class="o">&amp;</span><span class="n">mysh</span><span class="o">-&gt;</span><span class="n">history</span><span class="p">,</span><span class="w"> </span><span class="n">my_strdup</span><span class="p">(</span><span class="n">buffer</span><span class="p">),</span><span class="w"> </span><span class="n">STRING</span><span class="p">);</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l64" href="#l64">64</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "><span class="w">    </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l63" href="#l63">63</a></td>
+      <td class="lineno"><a id="l65" href="#l65">65</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">306</td>
+      <td class="linecount coveredLine">372</td>
       <td class="src coveredLine"><span class="w">    </span><span class="n">FREE</span><span class="p">(</span><span class="n">buffer</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l64" href="#l64">64</a></td>
+      <td class="lineno"><a id="l66" href="#l66">66</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">306</td>
+      <td class="linecount coveredLine">372</td>
       <td class="src coveredLine"><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l65" href="#l65">65</a></td>
+      <td class="lineno"><a id="l67" href="#l67">67</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>

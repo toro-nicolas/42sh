@@ -68,8 +68,7 @@ void replace_env_var(char **env, char *name, char *value)
 void check_path(mysh_t *mysh)
 {
     if (get_env_var(mysh->env, "PATH") == NULL)
-        set_new_env_var(mysh, "PATH",
-            "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin");
+        set_new_env_var(mysh, "PATH", "/usr/bin:/bin");
 }
 
 /**

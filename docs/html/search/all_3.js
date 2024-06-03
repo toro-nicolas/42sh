@@ -21,7 +21,7 @@ var searchData=
   ['condition_2ec_18',['condition.c',['../condition_8c.html',1,'']]],
   ['config_5ffile_2ec_19',['config_file.c',['../config__file_8c.html',1,'']]],
   ['contents_20📑_20',['Table of contents 📑',['../md_README.html#autotoc_md1',1,'']]],
-  ['contributors_20👥_21',['Contributors 👥',['../md_README.html#autotoc_md11',1,'']]],
+  ['contributors_20👥_21',['Contributors 👥',['../md_README.html#autotoc_md12',1,'']]],
   ['coverage_22',['Tests and code coverage',['../md_README.html#autotoc_md7',1,'']]],
   ['create_5fhistory_23',['create_history',['../myshell_8h.html#af687b5b0d037de4cdcc9683bf6e1aefa',1,'create_history(mysh_t *mysh):&#160;history_file.c'],['../history__file_8c.html#af687b5b0d037de4cdcc9683bf6e1aefa',1,'create_history(mysh_t *mysh):&#160;history_file.c']]],
   ['ctrl_24',['ctrl',['../myshell_8h.html#a3576f09d8bb360484e1b6e38d5507fa0',1,'ctrl(char c, int *pos, char *str, char **str2):&#160;ansi.c'],['../ansi_8c.html#a3576f09d8bb360484e1b6e38d5507fa0',1,'ctrl(char c, int *pos, char *str, char **str2):&#160;ansi.c']]]

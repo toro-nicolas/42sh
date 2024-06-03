@@ -37,7 +37,8 @@ var NAVTREE =
       [ "Compilation 🛠️", "md_README.html#autotoc_md8", null ],
       [ "Documentation 📚", "md_README.html#autotoc_md9", null ],
       [ "Code mandatory 📦", "md_README.html#autotoc_md10", null ],
-      [ "Contributors 👥", "md_README.html#autotoc_md11", null ]
+      [ "What's next ? 🚀", "md_README.html#autotoc_md11", null ],
+      [ "Contributors 👥", "md_README.html#autotoc_md12", null ]
     ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -58,8 +59,8 @@ var NAVTREEINDEX =
 "about_8c.html",
 "include_2mylist_8h.html",
 "lib_2mylist_2mylist_8h.html#a88b24da53140700204a527f910385029",
-"my__malloc__strndup_8c.html#a161966d6de4894bec46cb88ca40f535b",
-"myshell_8h.html#af15ac46a1fb124824fea079eb4e96bfa"
+"my__malloc__strndup_8c.html",
+"myshell_8h.html#af060838e2c2cb6125f8f2ab5f581d10a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

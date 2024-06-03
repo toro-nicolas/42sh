@@ -80,4 +80,3 @@ Test(exit6, full_gcorv)
     freopen("test_input.txt", "r", stdin);
     shell(env);
 }
-

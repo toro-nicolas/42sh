@@ -156,6 +156,7 @@ var NAVTREEINDEX2 =
 "md_README.html#autotoc_md1":[0,0],
 "md_README.html#autotoc_md10":[0,7],
 "md_README.html#autotoc_md11":[0,8],
+"md_README.html#autotoc_md12":[0,9],
 "md_README.html#autotoc_md2":[0,1],
 "md_README.html#autotoc_md3":[0,2],
 "md_README.html#autotoc_md4":[0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "my__malloc__strdup_8c.html":[2,0,1,2,4],
 "my__malloc__strdup_8c.html#abbb1a4d9aa9e00b83013804a1cabea55":[2,0,1,2,4,0],
 "my__malloc__strdup__word__array_8c.html":[2,0,1,2,5],
-"my__malloc__strdup__word__array_8c.html#ac72ba880962acef29231805d93aacc22":[2,0,1,2,5,0],
-"my__malloc__strndup_8c.html":[2,0,1,2,6]
+"my__malloc__strdup__word__array_8c.html#ac72ba880962acef29231805d93aacc22":[2,0,1,2,5,0]
 };
