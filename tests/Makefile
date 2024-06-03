@@ -275,6 +275,7 @@ TMPFILE		+=	tmp
 TMPFILE		+=	z
 TMPFILE		+=	.lol
 TMPFILE		+=	'test\ file'
+TMPFILE		+=	parentheses
 
 CFLAGS		=	-Werror -Wextra
 CFLAGS		+=	-I../include/
