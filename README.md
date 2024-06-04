@@ -142,7 +142,7 @@ Dynamic command line (1 / 2) :
 
 Oral Mark :
 ```
-Note : 3244
+Mark : 3244
 Testing Policy (4 / 4) :
 Test unitaires ok + test
 Methodology and Organisation (40 / 40) :
