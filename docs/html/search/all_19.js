@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['📋_0',['Features list 📋',['../md_README.html#autotoc_md4',1,'']]]
+  ['💻_2042sh_20🐚_0',['💻 42sh 🐚',['../md_README.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['💻_2042sh_20🐚_0',['💻 42sh 🐚',['../md_README.html',1,'']]]
+  ['👥_0',['Contributors 👥',['../md_README.html#autotoc_md13',1,'']]]
 ];

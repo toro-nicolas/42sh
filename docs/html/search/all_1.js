@@ -11,7 +11,7 @@ var searchData=
   ['analyse_5foperators_8',['analyse_operators',['../myshell_8h.html#af6a99cd0283c93dc5b48bfb3bd57a492',1,'analyse_operators(mysh_t *mysh, char *line):&#160;operators.c'],['../operators_8c.html#af6a99cd0283c93dc5b48bfb3bd57a492',1,'analyse_operators(mysh_t *mysh, char *line):&#160;operators.c']]],
   ['analyse_5fparentheses_9',['analyse_parentheses',['../myshell_8h.html#af004e503e79645136b2fea089261f0c5',1,'analyse_parentheses(mysh_t *mysh, input_command_t *input):&#160;parentheses.c'],['../parentheses_8c.html#af004e503e79645136b2fea089261f0c5',1,'analyse_parentheses(mysh_t *mysh, input_command_t *input):&#160;parentheses.c']]],
   ['analyse_5fpipes_10',['analyse_pipes',['../myshell_8h.html#a11513c688dbfe9aeed08de42429d47ed',1,'analyse_pipes(mysh_t *mysh, char *line):&#160;pipes.c'],['../pipes_8c.html#a11513c688dbfe9aeed08de42429d47ed',1,'analyse_pipes(mysh_t *mysh, char *line):&#160;pipes.c']]],
-  ['and_20code_20coverage_11',['Tests and code coverage',['../md_README.html#autotoc_md7',1,'']]],
+  ['and_20code_20coverage_11',['Tests and code coverage',['../md_README.html#autotoc_md8',1,'']]],
   ['ansi_2ec_12',['ansi.c',['../ansi_8c.html',1,'']]],
   ['array_5fseparators_13',['array_separators',['../myshell_8h.html#a724cd238f4915df7f024d832a1c43782',1,'array_separators(char const *str, char const *separator):&#160;array_separators.c'],['../array__separators_8c.html#a724cd238f4915df7f024d832a1c43782',1,'array_separators(char const *str, char const *separator):&#160;array_separators.c']]],
   ['array_5fseparators_2ec_14',['array_separators.c',['../array__separators_8c.html',1,'']]],

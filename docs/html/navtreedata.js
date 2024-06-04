@@ -32,13 +32,14 @@ var NAVTREE =
       [ "Features list 📋", "md_README.html#autotoc_md4", null ],
       [ "Result 🚩", "md_README.html#autotoc_md5", [
         [ "my.epitech.eu result", "md_README.html#autotoc_md6", null ],
-        [ "Tests and code coverage", "md_README.html#autotoc_md7", null ]
+        [ "Keynote result", "md_README.html#autotoc_md7", null ],
+        [ "Tests and code coverage", "md_README.html#autotoc_md8", null ]
       ] ],
-      [ "Compilation 🛠️", "md_README.html#autotoc_md8", null ],
-      [ "Documentation 📚", "md_README.html#autotoc_md9", null ],
-      [ "Code mandatory 📦", "md_README.html#autotoc_md10", null ],
-      [ "What's next ? 🚀", "md_README.html#autotoc_md11", null ],
-      [ "Contributors 👥", "md_README.html#autotoc_md12", null ]
+      [ "Compilation 🛠️", "md_README.html#autotoc_md9", null ],
+      [ "Documentation 📚", "md_README.html#autotoc_md10", null ],
+      [ "Code mandatory 📦", "md_README.html#autotoc_md11", null ],
+      [ "What's next ? 🚀", "md_README.html#autotoc_md12", null ],
+      [ "Contributors 👥", "md_README.html#autotoc_md13", null ]
     ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -59,8 +60,8 @@ var NAVTREEINDEX =
 "about_8c.html",
 "include_2mylist_8h.html",
 "lib_2mylist_2mylist_8h.html#a88b24da53140700204a527f910385029",
-"my__malloc__strndup_8c.html",
-"myshell_8h.html#af060838e2c2cb6125f8f2ab5f581d10a"
+"my__malloc__strdup__word__array_8c.html#ac72ba880962acef29231805d93aacc22",
+"myshell_8h.html#af004e503e79645136b2fea089261f0c5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

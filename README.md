@@ -124,6 +124,41 @@ If you discover a **problem** or an **error**, don't hesitate to **create an iss
 | **Results**                      | **87,5%**  |    **63/72**     |  **No**  |
 
 
+### Keynote result
+We got the **best 42sh** of **our class**.
+
+Project Mark :
+```
+Mark : 14
+Automatic tests (11.5 / 14) :
+
+History (1.5 / 2) :
+"!!" non fonctionnel
+Job control (0 / 2) :
+
+Dynamic command line (1 / 2) :
+
+```
+
+Oral Mark :
+```
+Note : 3244
+Testing Policy (4 / 4) :
+Test unitaires ok + test
+Methodology and Organisation (40 / 40) :
+Commits branche ok, github project
+Involvment (200 / 400) :
+Builtins bonus
+Scripting avancé
+History
+Oral Presentation (3000 / 4000) :
+"Présenter la keynote"
+Une seule personne pour gérer le diapo
+Schema d'explication sur le cheminement  intéressant
+Faute "fonctionnalitées"
+```
+
+
 ### Tests and code coverage
 Functional tests were carried out with a **bash tester** and **unit tests** using [criterion](https://criterion.readthedocs.io/en/master/intro.html).  
 Unit tests are still to be performed, but a large part of the code is already covered:  
