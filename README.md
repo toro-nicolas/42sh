@@ -226,9 +226,9 @@ You need multiple package for generate them :
 - Before merging, you'll need to check that all unit tests pass by running ```make tests_run```.
 - If the github actions don't succeed, then ask yourself some questions
 - Each commit will contain ```[+]``` or ```[-]``` or ```[~]``` followed by a message
-  - ```[+]``` : Added functionality
+  - ```[+]``` : Add feature
   - ```[-]``` : Delete feature
-  - ```[~]``` : Feature modification
+  - ```[~]``` : Edit feature
 
 **Of course, in exceptional cases, we may depart from these rules.**  
 
