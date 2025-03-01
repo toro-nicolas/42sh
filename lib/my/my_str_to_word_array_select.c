@@ -25,6 +25,8 @@ static int my_char_is_not_a_separator(char const c, char const *sep)
 static void check_words_and_num(char const *str, int *sep, int *word,
     char const *separator)
 {
+    if (str == NULL || separator == NULL)
+        return;
     for (int i = 0; str[i] != '\0'; i++) {
         if (my_char_is_not_a_separator(str[i], separator) && *sep == 1) {
             *word = *word + 1;
@@ -57,6 +59,8 @@ static char *nbr_sep(char *str, char const *separator)
 {
     int nbr_sep = 0;
 
+    if (str == NULL || separator == NULL)
+        return str;
     for (int i = 0; my_char_is_not_a_separator(str[i], separator) == 0; i++)
         nbr_sep++;
     return &str[nbr_sep];
