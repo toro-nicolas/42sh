@@ -67,8 +67,14 @@ void replace_env_var(char **env, char *name, char *value)
  */
 void check_path(mysh_t *mysh)
 {
-    if (get_env_var(mysh->env, "PATH") == NULL)
-        set_new_env_var(mysh, "PATH", "/usr/bin:/bin");
+    char *path = get_env_var(mysh->env, "PATH");
+
+    if (path == NULL)
+        add_variable(mysh, "path", "/usr/bin /bin");
+    else {
+        my_replace_char(path, ':', ' ');
+        add_variable(mysh, "path", path);
+    }
 }
 
 /**

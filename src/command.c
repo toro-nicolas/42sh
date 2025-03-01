@@ -42,8 +42,9 @@ builtin_t *get_builtin_command(int index)
 static char *get_command_path(char *command, char **env)
 {
     char *path = NULL;
-    char **path_tab = my_str_to_word_array_select(
-        get_env_var(env, "PATH"), ":");
+    char *var = (get_env_var(env, "PATH") ?
+        get_env_var(env, "PATH") : get_variable_value(get_mysh(), "path"));
+    char **path_tab = my_str_to_word_array_select(var, ": ");
 
     for (int index = 0; path_tab[index] != NULL; index++) {
         path = my_malloc(sizeof(char) * (my_strlen(path_tab[index]) +
