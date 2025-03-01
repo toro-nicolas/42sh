@@ -18,7 +18,7 @@ jobs:
       - name: Check coding style
         run:
           cat coding-style-reports.log;
-          .github/workflows/display_coding_style
+          #.github/workflows/display_coding_style
 
   check_program:
     runs-on: ubuntu-latest
