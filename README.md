@@ -110,18 +110,18 @@ If you discover a **problem** or an **error**, don't hesitate to **create an iss
 | advanced manipulations           |    100%    |       3/3        |    No    |
 | && and \|\| tests                |    100%    |       3/3        |    No    |
 | globbing                         |    100%    |       1/1        |    No    |
-| var interpreter                  |   66,7%    |       2/3        |    No    |
+| var interpreter                  |    100%    |       3/3        |    No    |
 | inhibitor                        |    100%    |       2/2        |    No    |
 | magic quotes                     |     0%     |       0/3        |    No    |
 | alias                            |    100%    |       4/4        |    No    |
-| scripting                        |     0%     |       0/1        |    No    |
-| foreach                          |     0%     |       0/1        |    No    |
+| scripting                        |    100%    |       1/1        |    No    |
+| foreach                          |    100%    |       1/1        |    No    |
 | which                            |    100%    |       2/2        |    No    |
 | where                            |    100%    |       2/2        |    No    |
-| if                               |     0%     |       0/2        |    No    |
+| if                               |    50%     |       1/2        |    No    |
 | repeat                           |    100%    |       1/1        |    No    |
 | parenthesis                      |     0%     |       0/1        |    No    |
-| **Results**                      | **87,5%**  |    **63/72**     |  **No**  |
+| **Results**                      | **93,1%**  |    **68/72**     |  **No**  |
 
 
 ### Keynote result
