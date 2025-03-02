@@ -31,7 +31,7 @@ tests/tester.sh
 echo "Tests for REDIRECTIONS :"
 echo "tests/test_files/redirections.ini" > tests/file
 tests/tester.sh
-echo "Tests for parentheses :"
+echo "Tests for PARENTHESES :"
 echo "tests/test_files/parentheses.ini" > tests/file
 tests/tester.sh
 echo "Tests for INHIBITORS :"
