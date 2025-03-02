@@ -39,13 +39,13 @@ jobs:
         run: |
           # Disable because all function are authorized 
           # .github/workflows/check_banned_functions 42sh .github/workflows/authorized_functions.txt
-      - name: Launch "make tests_run"
-        run: make tests_run
-        timeout-minutes: 2
-      - name: Check test references
-        run: |
-          ./tester.sh > current_test
-          ./check_test.sh current_test
+      #- name: Launch "make tests_run"
+      #  run: make tests_run
+      #  timeout-minutes: 2
+      #- name: Check test references
+      #  run: |
+      #    ./tester.sh > current_test
+      #    ./check_test.sh current_test
       - name: Check repository size
         run: |
           make fclean

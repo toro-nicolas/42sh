@@ -8,7 +8,7 @@
 #include "criterion/criterion.h"
 #include "criterion/redirect.h"
 #include "../include/myshell.h"
-/*
+
 Test(scripting1, full_gcorv)
 {
     char **env = my_str_to_word_array_select("TERM=xterm ; PATH=/bin:/usr/bin", " ;");
@@ -285,4 +285,3 @@ Test(scripting21, full_gcorv)
     freopen("test_input.txt", "r", stdin);
     shell(env);
 }
-*/
