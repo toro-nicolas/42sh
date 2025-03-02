@@ -67,7 +67,7 @@ void replace_env_var(char **env, char *name, char *value)
  */
 void check_path(mysh_t *mysh)
 {
-    char *path = get_env_var(mysh->env, "PATH");
+    char *path = my_malloc_strdup(get_env_var(mysh->env, "PATH"));
 
     if (path == NULL)
         add_variable(mysh, "path", "/usr/bin /bin");

@@ -44,6 +44,8 @@ static void search_and_delete(char **args, char **env, char **new_env)
         skip_variables(args, env, &index);
         new_env[index_new] = env[index];
         index_new++;
+        if (env[index] == NULL)
+            break;
     }
     new_env[index_new] = NULL;
 }
