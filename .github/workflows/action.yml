@@ -37,6 +37,7 @@ jobs:
         run: .github/workflows/check_program_compilation ${{ env.EXECUTABLE }}
       - name: Check banned functions
         run: |
+          where bc
           # Disable because all function are authorized 
           # .github/workflows/check_banned_functions 42sh .github/workflows/authorized_functions.txt
       - name: Launch "make tests_run"
