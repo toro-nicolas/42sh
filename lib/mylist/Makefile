@@ -37,7 +37,8 @@ OBJS		=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 
 HEADER		=	mylist.h
 
-CFLAGS		=	-Werror -Wextra -Wpedantic -g3 -L./ -lmy -I../../include
+CFLAGS		=	-Werror -Wextra -Wpedantic -g3 -L./ -lmy -I../../include \
+				-Wno-unused-result
 DEBUGFLAGS	=	-g3
 OPTIMIZEFLAGS	=	-O3
 

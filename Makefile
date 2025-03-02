@@ -72,7 +72,7 @@ SRCS		+=	../src/signals.c
 
 OBJS     	=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 
-CFLAGS		=	-Werror -Wextra -I./include/
+CFLAGS		=	-Werror -Wextra -I./include/ -Wno-unused-result
 DEBUGFLAGS	=	-g3
 OPTIMIZEFLAGS	=	-O3
 VALGRINDFLAGS	=	--leak-check=full --show-leak-kinds=all --track-origins=yes

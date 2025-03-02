@@ -151,7 +151,7 @@ OBJS		=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 
 HEADER		=	my.h
 
-CFLAGS		=	-Werror -Wall -Wextra -Wpedantic -Wno-unused
+CFLAGS		=	-Werror -Wall -Wextra -Wpedantic -Wno-unused -Wno-unused-result
 CFLAGS		+=	-Wno-strict-aliasing -Wno-alloc-size-larger-than
 DEBUGFLAGS	=	-g3
 OPTIMIZEFLAGS	=

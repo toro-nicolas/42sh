@@ -28,7 +28,7 @@ OBJS		=	$(addprefix $(BUILDDIR)/, $(notdir $(SRCS:.c=.o)))
 
 HEADER		=	mymemory.h
 
-CFLAGS		=	-Werror -Wextra -Wpedantic -g3
+CFLAGS		=	-Werror -Wextra -Wpedantic -g3 -Wno-unused-result
 CFLAGS		+=	-L./ -lmylist -lmy -I../../include
 DEBUGFLAGS	=	-g3
 OPTIMIZEFLAGS	=	-O3

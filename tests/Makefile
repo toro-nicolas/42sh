@@ -277,7 +277,7 @@ TMPFILE		+=	.lol
 TMPFILE		+=	'test\ file'
 TMPFILE		+=	parentheses
 
-CFLAGS		=	-Werror -Wextra
+CFLAGS		=	-Werror -Wextra -Wno-unused-result
 CFLAGS		+=	-I../include/
 CFLAGS		+= 	--coverage -lcriterion -lgcov
 
