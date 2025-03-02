@@ -303,5 +303,5 @@ $(NAME):	fclean libs
 
 tests_run: $(NAME)
 	@echo -e "\033[1;32mExecuting unit tests and gcovr...\033[0m"
-	@./$(NAME) || true
+	@./$(NAME) > /dev/null || true
 	@rm -rf $(TMPFILE)
