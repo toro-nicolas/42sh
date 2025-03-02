@@ -17,10 +17,10 @@ Tests for CD :
 [1;32mTest 6 [CD: Can't chdir (Permission denied)] : OK[0m
 [1;32mTest 7 [CD: No home directory 1] : OK[0m
 [1;32mTest 8 [CD: No home directory 2] : OK[0m
-[1;31mTest 9 [CD: Change home directory] : KO - Check output in /tmp/test.643053/9/mysh.out /tmp/test.643053/9/tcsh.out[0m
+[1;31mTest 9 [CD: Change home directory] : KO[0m
 [1;32mTest 10 [CD: No OLDPWD] : OK[0m
-[1;31mTest 11 [CD: using globbing] : KO - Check output in /tmp/test.643053/11/mysh.out /tmp/test.643053/11/tcsh.out[0m
-Error: 2 / 11 | Result: /tmp/test.643053/
+[1;31mTest 11 [CD: using globbing] : KO[0m
+Error: 2 / 11 | 
 Tests for ENV :
 [1;32mTest 1 [ENV: Simple setenv and unsetenv] : OK[0m
 [1;32mTest 2 [ENV: Redirect env to file] : OK[0m
@@ -28,12 +28,12 @@ Tests for ENV :
 [1;32mTest 4 [ENV: Setenv change commands path] : OK[0m
 [1;32mTest 5 [ENV: Multiple unsetenv] : OK[0m
 [1;32mTest 6 [ENV: Get one variable] : OK[0m
-[1;31mTest 7 [ENV: Unsetenv with globbing] : KO - Check output in /tmp/test.643922/7/mysh.out /tmp/test.643922/7/tcsh.out[0m
+[1;31mTest 7 [ENV: Unsetenv with globbing] : KO[0m
 [1;32mTest 8 [ENV: Setenv: Too many arguments] : OK[0m
 [1;32mTest 9 [ENV: Unsetenv: Too few arguments] : OK[0m
 [1;32mTest 10 [ENV: Setenv: Variable name must begin with a letter] : OK[0m
 [1;32mTest 11 [ENV: Setenv: Variable name must contain alphanumeric characters] : OK[0m
-Error: 1 / 11 | Result: /tmp/test.643922/
+Error: 1 / 11 | 
 Tests for EXIT :
 [1;32mTest 1 [EXIT: Simple command] : OK[0m
 [1;32mTest 2 [EXIT: With argument] : OK[0m
@@ -76,13 +76,13 @@ Tests for OPERATORS :
 [1;32mTest 2 [OPERATORS: Multiple commands with or] : OK[0m
 [1;32mTest 3 [OPERATORS: Multiple commands with and and or] : OK[0m
 [1;32mTest 4 [OPERATORS: And with one commands] : OK[0m
-[1;31mTest 5 [OPERATORS: Invalid null command] : KO - Check output in /tmp/test.648704/5/mysh.out /tmp/test.648704/5/tcsh.out[0m
-[1;31mTest 6 [OPERATORS: Invalid null command] : KO - Check output in /tmp/test.648704/6/mysh.out /tmp/test.648704/6/tcsh.out[0m
-[1;31mTest 7 [OPERATORS: Invalid null command] : KO - Check output in /tmp/test.648704/7/mysh.out /tmp/test.648704/7/tcsh.out[0m
-Error: 3 / 7 | Result: /tmp/test.648704/
+[1;31mTest 5 [OPERATORS: Invalid null command] : KO[0m
+[1;31mTest 6 [OPERATORS: Invalid null command] : KO[0m
+[1;31mTest 7 [OPERATORS: Invalid null command] : KO[0m
+Error: 3 / 7 | 
 Tests for PIPES :
 [1;32mTest 1 [PIPES: Simple pipe] : OK[0m
-[1;31mTest 2 [PIPES: With builtin] : KO - Check output in /tmp/test.649786/2/mysh.out /tmp/test.649786/2/tcsh.out[0m
+[1;31mTest 2 [PIPES: With builtin] : KO[0m
 [1;32mTest 3 [PIPES: With input redirect] : OK[0m
 [1;32mTest 4 [PIPES: With output redirect] : OK[0m
 [1;32mTest 5 [PIPES: With input and output redirect] : OK[0m
@@ -97,11 +97,11 @@ Tests for PIPES :
 [1;32mTest 14 [PIPES: Invalid null command 1] : OK[0m
 [1;32mTest 15 [PIPES: Invalid null command 2] : OK[0m
 [1;32mTest 16 [PIPES: With invalid command 1] : OK[0m
-[1;31mTest 17 [PIPES: With invalid command 2] : KO - Check output in /tmp/test.649786/17/mysh.out /tmp/test.649786/17/tcsh.out[0m
+[1;31mTest 17 [PIPES: With invalid command 2] : KO[0m
 [1;32mTest 18 [PIPES: With invalid command 3] : OK[0m
 [1;32mTest 19 [PIPES: With invalid command 4] : OK[0m
-[1;31mTest 20 [PIPES: Two unknown commands] : KO - Check output in /tmp/test.649786/20/mysh.out /tmp/test.649786/20/tcsh.out[0m
-Error: 3 / 20 | Result: /tmp/test.649786/
+[1;31mTest 20 [PIPES: Two unknown commands] : KO[0m
+Error: 3 / 20 | 
 Tests for REDIRECTIONS :
 [1;32mTest 1 [REDIRECTIONS: Simple left] : OK[0m
 [1;32mTest 2 [REDIRECTIONS: Double left] : OK[0m
@@ -110,10 +110,10 @@ Tests for REDIRECTIONS :
 [1;32mTest 5 [REDIRECTIONS: Simple left and right] : OK[0m
 [1;32mTest 6 [REDIRECTIONS: Simple left and double right] : OK[0m
 [1;32mTest 7 [REDIRECTIONS: Redirections with multiple commands] : OK[0m
-[1;31mTest 8 [REDIRECTIONS: Hard formatting] : KO - Check output in /tmp/test.651421/8/mysh.out /tmp/test.651421/8/tcsh.out[0m
+[1;31mTest 8 [REDIRECTIONS: Hard formatting] : KO[0m
 [1;32mTest 9 [REDIRECTIONS: Two left redirections] : OK[0m
 [1;32mTest 10 [REDIRECTIONS: Two right redirections] : OK[0m
-[1;31mTest 11 [REDIRECTIONS: No such file or directory for left redirection] : KO - Check output in /tmp/test.651421/11/mysh.out /tmp/test.651421/11/tcsh.out[0m
+[1;31mTest 11 [REDIRECTIONS: No such file or directory for left redirection] : KO[0m
 [1;32mTest 12 [REDIRECTIONS: Left redirection with no commands] : OK[0m
 [1;32mTest 13 [REDIRECTIONS: Right simple redirection with no commands] : OK[0m
 [1;32mTest 14 [REDIRECTIONS: Right double redirection with no commands] : OK[0m
@@ -127,23 +127,23 @@ Tests for REDIRECTIONS :
 [1;32mTest 24 [REDIRECTIONS: Missing name for redirect 5] : OK[0m
 [1;32mTest 25 [REDIRECTIONS: Missing name for redirect 6] : OK[0m
 [1;32mTest 26 [REDIRECTIONS: Missing name for redirect 7] : OK[0m
-[1;31mTest 27 [REDIRECTIONS: Missing name for redirect 8] : KO - Check output in /tmp/test.651421/27/mysh.out /tmp/test.651421/27/tcsh.out[0m
+[1;31mTest 27 [REDIRECTIONS: Missing name for redirect 8] : KO[0m
 [1;32mTest 28 [REDIRECTIONS: Missing name for redirect 9] : OK[0m
-[1;31mTest 29 [REDIRECTIONS: Missing name for redirect 10] : KO - Check output in /tmp/test.651421/29/mysh.out /tmp/test.651421/29/tcsh.out[0m
-Error: 4 / 27 | Result: /tmp/test.651421/
-Tests for parentheses :
-[1;32mTest 1 [parentheses: Simple command] : OK[0m
-[1;32mTest 2 [parentheses: Simple command in multiple ()] : OK[0m
-[1;32mTest 3 [parentheses: Redirect operators] : OK[0m
-[1;32mTest 4 [parentheses: Multi commands] : OK[0m
-[1;32mTest 5 [parentheses: Redirect pipes] : OK[0m
-[1;32mTest 6 [parentheses: Hard test] : OK[0m
-[1;32mTest 7 [parentheses: Too many 1] : OK[0m
-[1;32mTest 8 [parentheses: Too many 2] : OK[0m
-[1;32mTest 9 [parentheses: Too many 3] : OK[0m
-[1;32mTest 10 [parentheses: Badly placed 1] : OK[0m
-[1;32mTest 11 [parentheses: Badly placed 2] : OK[0m
-[1;32mTest 12 [parentheses: Invalid null command] : OK[0m
+[1;31mTest 29 [REDIRECTIONS: Missing name for redirect 10] : KO[0m
+Error: 4 / 27 | 
+Tests for PARENTHESES :
+[1;32mTest 1 [PARENTHESES: Simple command] : OK[0m
+[1;32mTest 2 [PARENTHESES: Simple command in multiple ()] : OK[0m
+[1;32mTest 3 [PARENTHESES: Redirect operators] : OK[0m
+[1;32mTest 4 [PARENTHESES: Multi commands] : OK[0m
+[1;32mTest 5 [PARENTHESES: Redirect pipes] : OK[0m
+[1;32mTest 6 [PARENTHESES: Hard test] : OK[0m
+[1;32mTest 7 [PARENTHESES: Too many 1] : OK[0m
+[1;32mTest 8 [PARENTHESES: Too many 2] : OK[0m
+[1;32mTest 9 [PARENTHESES: Too many 3] : OK[0m
+[1;32mTest 10 [PARENTHESES: Badly placed 1] : OK[0m
+[1;32mTest 11 [PARENTHESES: Badly placed 2] : OK[0m
+[1;32mTest 12 [PARENTHESES: Invalid null command] : OK[0m
 No errors found.
 Tests for INHIBITORS :
 [1;32mTest 1 [INHIBITORS: Test 1] : OK[0m
@@ -166,19 +166,19 @@ Tests for GLOBBING :
 [1;32mTest 2 [GLOBBING: b*] : OK[0m
 [1;32mTest 3 [GLOBBING: ?b*] : OK[0m
 [1;32mTest 4 [GLOBBING: [0-9][0-9]] : OK[0m
-[1;31mTest 5 [GLOBBING: [Aa-Yy]*] : KO - Check output in /tmp/test.666042/5/mysh.out /tmp/test.666042/5/tcsh.out[0m
-[1;31mTest 6 [GLOBBING: *.{c,o}] : KO - Check output in /tmp/test.666042/6/mysh.out /tmp/test.666042/6/tcsh.out[0m
-Error: 2 / 6 | Result: /tmp/test.666042/
+[1;31mTest 5 [GLOBBING: [Aa-Yy]*] : KO[0m
+[1;31mTest 6 [GLOBBING: *.{c,o}] : KO[0m
+Error: 2 / 6 | 
 Tests for ALIAS :
 [1;32mTest 1 [ALIAS: Unknown command (a -> ls)] : OK[0m
 [1;32mTest 2 [ALIAS: Existing command (ls -> ls -l)] : OK[0m
 [1;32mTest 3 [UNALIAS: Simple test (ls)] : OK[0m
 [1;32mTest 4 [ALIAS: No arguments (display alias list)] : OK[0m
 [1;32mTest 5 [UNALIAS: Multi command (l, a and g)] : OK[0m
-[1;31mTest 6 [ALIAS: command with inhibitors] : KO - Check output in /tmp/test.673622/6/mysh.out /tmp/test.673622/6/tcsh.out[0m
+[1;31mTest 6 [ALIAS: command with inhibitors] : KO[0m
 [1;32mTest 7 [UNALIAS: Globbing] : OK[0m
 [1;32mTest 8 [UNALIAS: Too few arguments] : OK[0m
-Error: 1 / 8 | Result: /tmp/test.673622/
+Error: 1 / 8 | 
 Tests for WHERE :
 [1;32mTest 1 [WHERE: Simple command (ls)] : OK[0m
 [1;32mTest 2 [WHERE: Multiple commands (ls, grep and pwd)] : OK[0m
@@ -217,7 +217,7 @@ Tests for SCRIPTING :
 [1;32mTest 3 [SCRIPTING: IF: true if with else] : OK[0m
 [1;32mTest 4 [SCRIPTING: IF: if with else true] : OK[0m
 [1;32mTest 5 [SCRIPTING: IF: if complex condition] : OK[0m
-[1;32mTest 6 [SCRIPTING: IF: if false] : OK[0m
+[1;32mTest 6 [SCRIPTING: IF: then/endif not found] : OK[0m
 [1;32mTest 7 [SCRIPTING: ELSE: useless else] : OK[0m
 [1;32mTest 8 [SCRIPTING: IF: complexe script] : OK[0m
 [1;32mTest 9 [SCRIPTING: IF: endif not found] : OK[0m
@@ -226,14 +226,14 @@ Tests for SCRIPTING :
 [1;32mTest 12 [SCRIPTING: IF: Empty if] : OK[0m
 [1;32mTest 13 [SCRIPTING: ENDIF: Simple command] : OK[0m
 [1;32mTest 14 [SCRIPTING: ENDIF: Too many arguments] : OK[0m
-[1;31mTest 15 [SCRIPTING: IF: Expression Syntax] : KO - Check output in /tmp/test.676637/15/mysh.out /tmp/test.676637/15/tcsh.out[0m
+[1;31mTest 15 [SCRIPTING: IF: Expression Syntax] : KO[0m
 [1;32mTest 16 [SCRIPTING: FOREACH: Simple foreach] : OK[0m
 [1;32mTest 17 [SCRIPTING: FOREACH && IF: Combined] : OK[0m
 [1;32mTest 18 [SCRIPTING: FOREACH: Empty variable] : OK[0m
 [1;32mTest 19 [SCRIPTING: FOREACH: Too few arguments] : OK[0m
 [1;32mTest 20 [SCRIPTING: FOREACH: Words not parenthesized] : OK[0m
 [1;32mTest 21 [SCRIPTING: FOREACH: Invalid variable] : OK[0m
-Error: 1 / 21 | Result: /tmp/test.676637/
+Error: 1 / 21 | 
 Tests for VARIABLES :
 [1;32mTest 1 [VARIABLES: Hard set and unset local variables] : OK[0m
 [1;32mTest 2 [VARIABLES: Hard set and unset local variables] : OK[0m
@@ -251,25 +251,25 @@ Tests for VARIABLES :
 [1;32mTest 14 [VARIABLES: Illegal variable name 6] : OK[0m
 [1;32mTest 15 [VARIABLES: Missing '}' 1] : OK[0m
 [1;32mTest 16 [VARIABLES: Missing '}' 2] : OK[0m
-[1;31mTest 17 [VARIABLES: Newline in variable name] : KO - Check output in /tmp/test.678397/17/mysh.out /tmp/test.678397/17/tcsh.out[0m
+[1;31mTest 17 [VARIABLES: Newline in variable name] : KO[0m
 [1;32mTest 18 [SPECIAL VARIABLES: Exit status] : OK[0m
-[1;31mTest 19 [SPECIAL VARIABLES: Old command] : KO - Check output in /tmp/test.678397/19/mysh.out /tmp/test.678397/19/tcsh.out[0m
-[1;31mTest 20 [SPECIAL VARIABLES: Old command (no env)] : KO - Check output in /tmp/test.678397/20/mysh.out /tmp/test.678397/20/tcsh.out[0m
-[1;31mTest 21 [SPECIAL VARIABLES: cwd] : KO - Check output in /tmp/test.678397/21/mysh.out /tmp/test.678397/21/tcsh.out[0m
-[1;31mTest 22 [SPECIAL VARIABLES: owd] : KO - Check output in /tmp/test.678397/22/mysh.out /tmp/test.678397/22/tcsh.out[0m
-[1;31mTest 23 [SPECIAL VARIABLES: Path] : KO - Check output in /tmp/test.678397/23/mysh.out /tmp/test.678397/23/tcsh.out[0m
-[1;31mTest 24 [SPECIAL VARIABLES: Path (no env)] : KO - Check output in /tmp/test.678397/24/mysh.out /tmp/test.678397/24/tcsh.out[0m
-[1;31mTest 25 [SPECIAL VARIABLES: Home] : KO - Check output in /tmp/test.678397/25/mysh.out /tmp/test.678397/25/tcsh.out[0m
-[1;31mTest 26 [SPECIAL VARIABLES: Home (no env)] : KO - Check output in /tmp/test.678397/26/mysh.out /tmp/test.678397/26/tcsh.out[0m
-[1;31mTest 27 [SPECIAL VARIABLES: shell] : KO - Check output in /tmp/test.678397/27/mysh.out /tmp/test.678397/27/tcsh.out[0m
-[1;31mTest 28 [SPECIAL VARIABLES: user] : KO - Check output in /tmp/test.678397/28/mysh.out /tmp/test.678397/28/tcsh.out[0m
-[1;31mTest 29 [SPECIAL VARIABLES: uid] : KO - Check output in /tmp/test.678397/29/mysh.out /tmp/test.678397/29/tcsh.out[0m
+[1;31mTest 19 [SPECIAL VARIABLES: Old command] : KO[0m
+[1;31mTest 20 [SPECIAL VARIABLES: Old command (no env)] : KO[0m
+[1;31mTest 21 [SPECIAL VARIABLES: cwd] : KO[0m
+[1;31mTest 22 [SPECIAL VARIABLES: owd] : KO[0m
+[1;31mTest 23 [SPECIAL VARIABLES: Path] : KO[0m
+[1;31mTest 24 [SPECIAL VARIABLES: Path (no env)] : KO[0m
+[1;31mTest 25 [SPECIAL VARIABLES: Home] : KO[0m
+[1;31mTest 26 [SPECIAL VARIABLES: Home (no env)] : KO[0m
+[1;31mTest 27 [SPECIAL VARIABLES: shell] : KO[0m
+[1;31mTest 28 [SPECIAL VARIABLES: user] : KO[0m
+[1;31mTest 29 [SPECIAL VARIABLES: uid] : KO[0m
 [1;32mTest 30 [SPECIAL VARIABLES: ignoreof] : OK[0m
-[1;31mTest 31 [SPECIAL VARIABLES: Term] : KO - Check output in /tmp/test.678397/31/mysh.out /tmp/test.678397/31/tcsh.out[0m
-[1;31mTest 32 [SPECIAL VARIABLES: Term (no env)] : KO - Check output in /tmp/test.678397/32/mysh.out /tmp/test.678397/32/tcsh.out[0m
+[1;31mTest 31 [SPECIAL VARIABLES: Term] : KO[0m
+[1;31mTest 32 [SPECIAL VARIABLES: Term (no env)] : KO[0m
 [1;32mTest 33 [SPECIAL VARIABLES ALIAS: precmd] : OK[0m
-[1;31mTest 34 [SPECIAL VARIABLES ALIAS: cwdcmd] : KO - Check output in /tmp/test.678397/34/mysh.out /tmp/test.678397/34/tcsh.out[0m
-Error: 15 / 34 | Result: /tmp/test.678397/
+[1;31mTest 34 [SPECIAL VARIABLES ALIAS: cwdcmd] : KO[0m
+Error: 15 / 34 | 
 Tests for OTHER :
 [1;32mTest 1 [OTHER: Null command] : OK[0m
 [1;32mTest 2 [SOURCE: Simple command] : OK[0m
