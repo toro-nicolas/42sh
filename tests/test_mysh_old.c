@@ -998,7 +998,7 @@ Test(test87, full_gcorv)
     char **env = my_str_to_word_array_select("", " ;");
     FILE *file = fopen("test_input.txt", "w");
 
-    fprintf(file, "setenv ae%9\n");
+    fprintf(file, "setenv ae\n");
     fprintf(file, "exit\n");
     fclose(file);
     freopen("test_input.txt", "r", stdin);
